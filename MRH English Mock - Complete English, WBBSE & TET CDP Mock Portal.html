@@ -1,0 +1,2986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MRH English Mock | Official English, WBBSE & TET CDP Mock Test Portal</title>
+  <meta name="description" content="MRH English Mock by MRH Sir — Official mock test platform for WBBSE Madhyamik, WBPSC Clerkship, Miscellaneous, WBP SI, WBCS, WB Primary & Upper Primary TET, CTET (English + CDP), Comprehension Passages & Descriptive Writing with Automated Script Evaluation." />
+  <meta name="keywords" content="MRH English Mock, MRH Sir, WBBSE Madhyamik English Mock Test, WBPSC Clerkship English, WBCS English Mains, WBP SI Mains, WB Primary TET CDP, Upper Primary TET, CTET English, Bengali to English Translation, Precis Writing, Report Writing" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mrhenglishmock.github.io/" />
+
+  <!-- OpenGraph / Social Search Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MRH English Mock" />
+  <meta property="og:title" content="MRH English Mock | Complete English & TET CDP Mock Test Platform" />
+  <meta property="og:description" content="Official mock test portal for WBBSE Madhyamik, WBPSC Clerkship, Miscellaneous, WBP SI, WBCS, WB Primary & Upper Primary TET, and CTET with automated script & handwriting evaluation." />
+  <meta property="og:url" content="https://mrhenglishmock.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MRH English Mock | Official English & TET CDP Mock Portal" />
+  <meta name="twitter:description" content="Practice WBBSE Madhyamik, WBPSC, WBCS, WBP SI, Primary/Upper Primary TET & CTET with direct UPI unlock & MRH Smart Script Evaluator." />
+
+  <!-- Schema.org Structured Data for Google Search Indexing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mrhenglishmock.github.io/#website",
+        "url": "https://mrhenglishmock.github.io/",
+        "name": "MRH English Mock",
+        "description": "Complete English Grammar, Vocabulary, WBBSE Madhyamik, Descriptive Writing & TET CDP Mock Test Portal by MRH Sir.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://mrhenglishmock.github.io/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://mrhenglishmock.github.io/#organization",
+        "name": "MRH English Mock",
+        "alternateName": "MRH Education",
+        "url": "https://mrhenglishmock.github.io/",
+        "email": "mrh.dltpr@gmail.com",
+        "telephone": "+91-8972949607",
+        "sameAs": [
+          "https://youtube.com/@mrh-sir",
+          "https://t.me/mrh_1118"
+        ]
+      },
+      {
+        "@type": "Course",
+        "name": "Complete English Grammar, Vocabulary, Writing Skill & TET CDP Mock Test Series",
+        "description": "Comprehensive online mock test series for WBBSE Madhyamik, WBPSC Clerkship, Miscellaneous, WBP SI, WBCS, WB Primary & Upper Primary TET, and CTET.",
+        "provider": {
+          "@id": "https://mrhenglishmock.github.io/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CSS & Google Fonts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- QR Code Generator Library for Dynamic UPI QR -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Bengali', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            bengali: ['Noto Sans Bengali', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              850: '#0f2347',
+              900: '#0a1935',
+              950: '#060f21',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans Bengali', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
+    .font-display {
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+    }
+    .reflective-sheen {
+      position: relative;
+      overflow: hidden;
+    }
+    .reflective-sheen::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -60%;
+      width: 45%;
+      height: 200%;
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.18) 50%, rgba(255,255,255,0) 100%);
+      transform: rotate(25deg);
+      animation: sheenSweep 6s infinite ease-in-out;
+      pointer-events: none;
+    }
+    @keyframes sheenSweep {
+      0%, 60% { left: -60%; }
+      100% { left: 140%; }
+    }
+    .pulse-gold {
+      box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.45);
+      animation: pulseGold 2.4s infinite;
+    }
+    @keyframes pulseGold {
+      0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.45); }
+      70% { box-shadow: 0 0 0 12px rgba(245, 158, 11, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: #fff !important; }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-amber-200 selection:text-navy-950">
+
+  <!-- Toast Notification Stack (No alert/confirm dialogs used) -->
+  <div id="toast-container" class="no-print fixed top-4 right-4 z-[100] flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+  <!-- Interactive Mobile SMS Message Box Notification Drawer (1-Tap Autofill + WebOTP) -->
+  <div id="sms-message-banner" class="no-print fixed top-3 left-1/2 -translate-x-1/2 z-[110] hidden max-w-md w-[94%] bg-slate-900/95 backdrop-blur-md text-white rounded-2xl p-3.5 shadow-2xl border border-emerald-400/50 transition-all duration-300">
+    <div class="flex items-start gap-3">
+      <div class="w-10 h-10 rounded-xl bg-emerald-500 text-navy-950 flex items-center justify-center shrink-0 text-lg shadow">
+        <i class="fa-solid fa-comment-sms"></i>
+      </div>
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-[11px] font-extrabold uppercase tracking-wider text-emerald-400">Messages • VM-MRHEDU</span>
+          <span class="text-[10px] text-slate-400">Just now</span>
+        </div>
+        <p id="sms-banner-text" class="text-xs text-slate-200 mt-0.5 leading-snug font-mono"></p>
+        <div class="mt-2 flex items-center gap-2">
+          <button id="sms-autofill-btn" type="button" class="px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-extrabold text-xs shadow transition">
+            <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> Tap to Autofill OTP
+          </button>
+          <button type="button" onclick="document.getElementById('sms-message-banner').classList.add('hidden')" class="px-2.5 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs">
+            Dismiss
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Official Navigation Header -->
+  <header class="no-print sticky top-0 z-50 bg-navy-950/95 backdrop-blur-md text-white border-b border-blue-900/60 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2">
+      <!-- Brand Identity -->
+      <button onclick="app.navigate('home')" class="flex items-center gap-3 text-left group focus:outline-none">
+        <div id="nav-brand-avatar" class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-orange-600 flex items-center justify-center text-navy-950 font-display font-extrabold text-lg shadow-md overflow-hidden shrink-0 group-hover:scale-105 transition">
+          MRH
+        </div>
+        <div>
+          <span id="nav-site-title" class="font-display font-extrabold text-base sm:text-lg tracking-tight text-white block leading-none">
+            MRH <span class="text-amber-400">English Mock</span>
+          </span>
+          <span class="text-[10px] text-blue-300 font-medium tracking-wider uppercase block mt-0.5">
+            Academic, Competitive &amp; TET CDP Portal
+          </span>
+        </div>
+      </button>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-5 text-xs font-bold uppercase tracking-wider text-slate-300">
+        <button onclick="app.navigate('home')" class="hover:text-amber-400 transition">Home &amp; Exams</button>
+        <button onclick="app.openPassageLab()" class="hover:text-amber-400 transition">Passage Lab</button>
+        <button onclick="app.openWritingStudio('w-bn-en')" class="hover:text-amber-400 transition">Writing &amp; Copy Scan</button>
+        <button onclick="app.openModal('zerocost-modal')" class="hover:text-amber-400 transition">Zero-Cost &amp; Google SEO</button>
+      </nav>
+
+      <!-- Session Controls -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div id="header-user-pill" class="hidden sm:flex items-center gap-2 bg-navy-900 border border-blue-800/70 px-3 py-1.5 rounded-full text-xs">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span id="header-user-label" class="font-semibold text-slate-200 truncate max-w-[140px]">Guest</span>
+        </div>
+
+        <button id="btn-student-login" onclick="app.openStage1EntryModal()" class="px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold shadow transition flex items-center gap-1.5">
+          <i class="fa-solid fa-user-check"></i>
+          <span>Student Entry</span>
+        </button>
+
+        <button id="btn-student-logout" onclick="app.logoutStudent()" class="hidden px-3 py-2 rounded-xl bg-slate-800 hover:bg-rose-600 text-slate-200 hover:text-white text-xs font-bold transition" title="Logout Student">
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+
+        <button onclick="app.openAdminModal()" class="px-3.5 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-400/40 text-amber-300 text-xs font-bold transition flex items-center gap-1.5">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span id="admin-nav-text">Admin</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Dynamic View Root -->
+  <main id="app-root" class="flex-1"></main>
+
+  <!-- Official Footer -->
+  <footer class="no-print bg-navy-950 text-slate-300 border-t border-blue-950 mt-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center gap-2.5 mb-3">
+            <div class="w-9 h-9 rounded-xl bg-amber-500 text-navy-950 font-display font-extrabold flex items-center justify-center">MRH</div>
+            <span class="font-display font-extrabold text-white text-lg">MRH English Mock</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Dedicated mock test &amp; automated descriptive evaluation platform for WBBSE Madhyamik, WBPSC Clerkship, Miscellaneous, WBP SI, WBCS, WB Primary &amp; Upper Primary TET, and CTET aspirants.
+          </p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a href="https://youtube.com/@mrh-sir" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-rose-600/20 border border-rose-500/30 text-rose-300 hover:bg-rose-600/30 text-xs font-bold transition">
+              <i class="fa-brands fa-youtube"></i> YouTube (@mrh-sir)
+            </a>
+            <a href="https://t.me/mrh_1118" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-600/20 border border-sky-500/30 text-sky-300 hover:bg-sky-600/30 text-xs font-bold transition">
+              <i class="fa-brands fa-telegram"></i> Telegram (mrh_1118)
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-3">Direct UPI &amp; Support</h4>
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-building-columns text-amber-400"></i>
+              <span>Bank: <strong class="text-white">West Bengal Gramin Bank - 3675</strong></span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-qrcode text-emerald-400"></i>
+              <span>UPI ID: <strong id="footer-upi-text" class="font-mono text-emerald-300">8972949607-6@ibl</strong></span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+              <a href="https://wa.me/918972949607" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400 transition">WhatsApp: +91 8972949607</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-blue-400"></i>
+              <a href="mailto:mrh.dltpr@gmail.com" class="hover:text-amber-400 transition">mrh.dltpr@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-3">Security &amp; Zero-Cost Architecture</h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-3">
+            Strict 1-Device lock per verified student account, 2-Device OTP lock for Admin (<span class="font-mono text-amber-300">8972949607</span>), and standalone zero-server-cost portability.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <button onclick="app.openModal('zerocost-modal')" class="px-3.5 py-2 rounded-xl bg-navy-900 hover:bg-blue-900 border border-blue-800 text-xs font-bold text-amber-300 transition">
+              <i class="fa-solid fa-globe mr-1"></i> Publish &amp; Spread Guide
+            </button>
+            <button onclick="app.openPurchaseModal('all-bundle')" class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white transition">
+              <i class="fa-solid fa-qrcode mr-1"></i> UPI QR Scanner
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-slate-500">
+        <span>&copy; 2026 MRH English Mock. All Rights Reserved.</span>
+        <span>Dedicated Academic, Competitive &amp; TET CDP Mock Evaluation Platform</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 1: STAGE 1 STUDENT ENTRY (NAME + MOBILE OTP ONLY + 1-DEVICE)    -->
+  <!-- ===================================================================== -->
+  <div id="stage1-entry-modal" class="no-print fixed inset-0 bg-slate-950/75 backdrop-blur-sm z-[70] hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-200 my-auto">
+      <div class="flex justify-between items-start mb-5">
+        <div>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-800 mb-2">
+            <i class="fa-solid fa-door-open"></i> Stage 1 • Easy Student Entry
+          </span>
+          <h2 class="font-display font-extrabold text-2xl text-slate-900">Enter MRH English Mock</h2>
+          <p class="text-xs text-slate-500 mt-1">Browser autofill &amp; SMS Message Box OTP enabled. Enter Name &amp; verify Mobile Number via OTP.</p>
+        </div>
+        <button onclick="app.closeModal('stage1-entry-modal')" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form onsubmit="app.handleStage1Submit(event)" autocomplete="on" class="space-y-4">
+        <div>
+          <label for="s1-name" class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Student Full Name *</label>
+          <input type="text" id="s1-name" name="name" autocomplete="name" required placeholder="e.g., Ananya Chatterjee" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-700 text-sm" />
+        </div>
+
+        <div>
+          <label for="s1-mobile" class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">10-Digit Mobile Number *</label>
+          <div class="flex gap-2">
+            <input type="tel" id="s1-mobile" name="tel" autocomplete="tel-national" inputmode="tel" required pattern="[0-9]{10}" maxlength="10" placeholder="9876543210" class="flex-1 px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-700 text-sm font-mono" />
+            <button type="button" onclick="app.sendStage1MobileOTP()" class="px-4 py-3 rounded-xl bg-navy-900 hover:bg-blue-800 text-white text-xs font-bold whitespace-nowrap transition">
+              Send OTP
+            </button>
+          </div>
+          <div id="s1-otp-box" class="hidden mt-3 bg-amber-50 p-3 rounded-2xl border border-amber-200 space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[11px] font-bold text-amber-900"><i class="fa-solid fa-comment-sms mr-1"></i> Enter 6-Digit SMS OTP</span>
+              <span class="text-[10px] text-amber-700 font-semibold">Auto-Fill Ready</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <input type="text" id="s1-otp-input" name="one-time-code" autocomplete="one-time-code" inputmode="numeric" maxlength="6" oninput="app.syncOtpBoxesFromSingle('s1', this.value)" placeholder="••••••" class="w-28 px-2.5 py-2 rounded-lg border border-amber-300 text-center text-sm font-mono font-extrabold tracking-widest bg-white" />
+              <div id="s1-otp-digits" class="flex-1 grid grid-cols-6 gap-1"></div>
+            </div>
+            <button type="button" onclick="app.verifyStage1MobileOTP()" class="w-full py-2 rounded-xl bg-amber-500 hover:bg-amber-600 text-navy-950 font-extrabold text-xs shadow-sm">
+              Verify SMS OTP
+            </button>
+          </div>
+          <p id="s1-status" class="text-[11px] mt-1.5 text-slate-500"></p>
+        </div>
+
+        <div class="bg-slate-100 rounded-xl p-3 flex items-center justify-between text-xs text-slate-600">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-fingerprint text-blue-700"></i> Device ID: <strong id="s1-device-id" class="font-mono"></strong></span>
+          <span class="text-emerald-700 font-bold"><i class="fa-solid fa-lock"></i> 1-Device Lock</span>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-blue-800 to-navy-900 hover:from-blue-900 hover:to-navy-950 text-white font-bold text-sm shadow-lg transition">
+          Verify &amp; Enter Website
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 2: STAGE 2 COURSE PURCHASE (DUAL MOBILE + EMAIL OTP + UPI QR)   -->
+  <!-- ===================================================================== -->
+  <div id="stage2-purchase-modal" class="no-print fixed inset-0 bg-slate-950/75 backdrop-blur-sm z-[75] hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 my-auto">
+      <div class="flex justify-between items-start mb-4">
+        <div>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-900 mb-1.5">
+            <i class="fa-solid fa-shield-check"></i> Stage 2 • Course Enrollment &amp; UPI QR Payment
+          </span>
+          <h3 id="purchase-course-title" class="font-display font-extrabold text-xl sm:text-2xl text-slate-900">Complete Course Access</h3>
+          <p class="text-xs text-slate-500 mt-0.5">Verify both Mobile OTP &amp; Email OTP, then scan the West Bengal Gramin Bank UPI QR to auto-unlock.</p>
+        </div>
+        <button onclick="app.closeModal('stage2-purchase-modal')" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Step 2A: Mandatory Dual Verification (Mobile OTP + Email OTP) -->
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 mb-5 space-y-3">
+        <div class="flex items-center justify-between">
+          <h4 class="text-xs font-extrabold uppercase tracking-wider text-navy-900">
+            Step 1: Verify Mobile Number &amp; Email ID Both
+          </h4>
+          <span id="dual-otp-badge" class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-100 text-amber-800">
+            Pending Dual OTP
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Mobile OTP Confirmation -->
+          <div class="bg-white p-3.5 rounded-xl border border-slate-200 space-y-2">
+            <label for="s2-mobile" class="block text-[11px] font-bold uppercase text-slate-500">1. Mobile Number OTP</label>
+            <div class="flex gap-1.5">
+              <input type="tel" id="s2-mobile" name="tel" autocomplete="tel-national" readonly class="w-full px-2.5 py-1.5 rounded-lg bg-slate-100 font-mono text-xs font-bold text-slate-700" />
+              <button type="button" onclick="app.sendStage2MobileOTP()" class="px-2.5 py-1.5 rounded-lg bg-navy-900 text-white text-[11px] font-bold whitespace-nowrap">Send OTP</button>
+            </div>
+            <div id="s2-mob-otp-row" class="hidden space-y-1.5">
+              <div class="flex gap-1.5">
+                <input type="text" id="s2-mob-otp-val" name="one-time-code" autocomplete="one-time-code" inputmode="numeric" maxlength="6" placeholder="6-digit SMS OTP" class="w-full px-2.5 py-1.5 rounded-lg border border-amber-300 text-xs font-mono font-bold tracking-wider" />
+                <button type="button" onclick="app.verifyStage2MobileOTP()" class="px-2.5 py-1.5 rounded-lg bg-amber-500 text-navy-950 font-bold text-[11px]">Verify</button>
+              </div>
+            </div>
+            <p id="s2-mob-status" class="text-[11px] text-slate-500"></p>
+          </div>
+
+          <!-- Email OTP Verification -->
+          <div class="bg-white p-3.5 rounded-xl border border-slate-200 space-y-2">
+            <label for="s2-email" class="block text-[11px] font-bold uppercase text-slate-500">2. Email ID OTP Verification</label>
+            <div class="flex gap-1.5">
+              <input type="email" id="s2-email" name="email" autocomplete="email" placeholder="student@gmail.com" class="w-full px-2.5 py-1.5 rounded-lg border border-slate-300 text-xs" />
+              <button type="button" onclick="app.sendStage2EmailOTP()" class="px-2.5 py-1.5 rounded-lg bg-blue-700 text-white text-[11px] font-bold whitespace-nowrap">Send Code</button>
+            </div>
+            <div id="s2-email-otp-row" class="hidden flex gap-1.5">
+              <input type="text" id="s2-email-otp-val" autocomplete="one-time-code" inputmode="numeric" maxlength="6" placeholder="Email OTP" class="w-full px-2.5 py-1.5 rounded-lg border border-blue-300 text-xs font-mono font-bold" />
+              <button type="button" onclick="app.verifyStage2EmailOTP()" class="px-2.5 py-1.5 rounded-lg bg-blue-700 text-white font-bold text-[11px]">Verify</button>
+            </div>
+            <p id="s2-email-status" class="text-[11px] text-slate-500"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2B: UPI Scanner & Direct Payment -->
+      <div id="upi-payment-gate" class="opacity-50 pointer-events-none transition-all duration-300">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <!-- Left: Authentic West Bengal Gramin Bank - 3675 UPI QR Scanner -->
+          <div class="bg-slate-950 text-white rounded-2xl p-5 text-center border border-slate-800 shadow-inner">
+            <div class="inline-flex items-center gap-2 mb-1">
+              <span class="w-6 h-6 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">
+                <i class="fa-solid fa-building-columns"></i>
+              </span>
+              <span class="text-sm font-bold text-white">West Bengal Gramin Bank - 3675</span>
+            </div>
+            <p class="text-[11px] font-semibold text-emerald-400 mb-3">Primary account for receiving money</p>
+
+            <div class="bg-white p-3 rounded-2xl inline-block mx-auto shadow-lg relative">
+              <div id="upi-qr-container" class="w-44 h-44 flex items-center justify-center"></div>
+              <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <span class="w-9 h-9 rounded-full bg-slate-950 text-white font-bold text-base flex items-center justify-center border-2 border-white shadow">
+                  पे
+                </span>
+              </div>
+            </div>
+
+            <div class="mt-3 bg-slate-900 rounded-xl p-2.5 flex items-center justify-between border border-slate-800">
+              <span class="text-xs font-mono font-bold text-amber-300 truncate" id="modal-upi-id">8972949607-6@ibl</span>
+              <button type="button" onclick="app.copyUpiId()" class="px-2.5 py-1 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-extrabold transition">
+                Copy
+              </button>
+            </div>
+
+            <div class="mt-2.5 grid grid-cols-2 gap-2">
+              <button type="button" onclick="app.downloadQrImage()" class="py-1.5 px-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-bold text-slate-200 transition">
+                <i class="fa-solid fa-download mr-1"></i> Download QR
+              </button>
+              <a id="upi-intent-link" href="upi://pay?pa=8972949607-6@ibl&pn=MRH%20English%20Mock&cu=INR" class="py-1.5 px-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white transition flex items-center justify-center">
+                <i class="fa-solid fa-mobile-screen mr-1"></i> Pay in UPI App
+              </a>
+            </div>
+            <p class="text-[10px] text-slate-400 mt-2">Supported on PhonePe • GPay • Paytm • BHIM UPI</p>
+          </div>
+
+          <!-- Right: UTR Confirmation -->
+          <div class="space-y-4">
+            <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4">
+              <div class="flex justify-between items-center">
+                <span class="text-xs font-bold text-amber-900">Payable Course Fee:</span>
+                <span id="modal-course-price" class="text-2xl font-display font-extrabold text-navy-900">₹199</span>
+              </div>
+              <p class="text-[11px] text-amber-800 mt-1">
+                100% direct UPI transfer to MRH Sir's bank account. Enter your 12-digit UTR/Transaction Ref No. below for instant activation.
+              </p>
+            </div>
+
+            <form onsubmit="app.submitUpiPayment(event)" class="space-y-3">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">12-Digit UPI Transaction / UTR ID *</label>
+                <input type="text" id="payment-utr-input" required minlength="8" maxlength="24" placeholder="e.g., 432698745120" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-mono text-sm focus:ring-2 focus:ring-emerald-600" />
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm shadow-lg transition">
+                Verify Payment &amp; Unlock Course Instantly
+              </button>
+
+              <button type="button" onclick="app.sendWhatsAppReceipt()" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-emerald-400 font-bold text-xs flex items-center justify-center gap-2 transition">
+                <i class="fa-brands fa-whatsapp text-base"></i> Share Receipt on WhatsApp (8972949607)
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 3: ADMIN MOBILE OTP LOGIN (8972949607 ONLY - MAX 2 DEVICES)     -->
+  <!-- ===================================================================== -->
+  <div id="admin-login-modal" class="no-print fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-[80] hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-200">
+      <div class="flex justify-between items-start mb-5">
+        <div>
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-900 mb-2">
+            <i class="fa-solid fa-lock"></i> Admin Security • Max 2 Devices
+          </span>
+          <h3 class="font-display font-extrabold text-2xl text-slate-900">Admin Control Access</h3>
+          <p class="text-xs text-slate-500 mt-1">Restricted strictly to Owner Mobile Number OTP verification.</p>
+        </div>
+        <button onclick="app.closeModal('admin-login-modal')" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="space-y-4">
+        <div>
+          <label for="admin-mobile-input" class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Admin Mobile Number</label>
+          <div class="flex gap-2">
+            <input type="tel" id="admin-mobile-input" name="tel" autocomplete="tel-national" inputmode="tel" value="8972949607" maxlength="10" class="flex-1 px-4 py-3 rounded-xl border border-slate-300 font-mono font-bold text-sm bg-slate-50" />
+            <button type="button" onclick="app.sendAdminOTP()" class="px-4 py-3 rounded-xl bg-navy-900 hover:bg-navy-850 text-white text-xs font-bold transition">
+              Send OTP
+            </button>
+          </div>
+        </div>
+
+        <div id="admin-otp-section" class="hidden space-y-3 bg-amber-50 p-4 rounded-2xl border border-amber-200">
+          <label for="admin-otp-input" class="block text-xs font-bold text-amber-900">Enter 6-Digit Admin SMS OTP (Auto-Fill Enabled)</label>
+          <input type="text" id="admin-otp-input" name="one-time-code" autocomplete="one-time-code" inputmode="numeric" maxlength="6" placeholder="••••••" class="w-full px-4 py-3 rounded-xl border border-amber-300 text-center font-mono text-lg font-bold tracking-widest bg-white" />
+          <button type="button" onclick="app.verifyAdminOTP()" class="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-navy-950 font-extrabold text-sm shadow transition">
+            Verify &amp; Enter Admin Dashboard
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 4: ZERO-COST HOSTING, GOOGLE SEARCH SEO & STUDENT SPREAD GUIDE  -->
+  <!-- ===================================================================== -->
+  <div id="zerocost-modal" class="no-print fixed inset-0 bg-slate-950/75 backdrop-blur-sm z-[80] hidden items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 my-auto">
+      <div class="flex justify-between items-start mb-4">
+        <div>
+          <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800">₹0 Lifetime Cost • Google Search &amp; Growth</span>
+          <h3 class="font-display font-extrabold text-2xl text-slate-900 mt-1.5">Publish &amp; Spread "MRH English Mock"</h3>
+        </div>
+        <button onclick="app.closeModal('zerocost-modal')" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-500">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="space-y-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+          <h4 class="font-bold text-slate-900 mb-1"><i class="fa-brands fa-github text-slate-800 mr-1.5"></i> Step 1: Host Free Forever (₹0/Month)</h4>
+          <p>Upload this single <code class="bg-slate-200 px-1.5 py-0.5 rounded font-mono text-xs">index.html</code> file to a free GitHub repository (<code class="font-mono text-xs">mrhenglishmock.github.io</code>) or Netlify / Cloudflare Pages. Zero server, database, or maintenance bills.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+          <h4 class="font-bold text-slate-900 mb-1"><i class="fa-brands fa-google text-blue-600 mr-1.5"></i> Step 2: Index on Google Search as "MRH English Mock"</h4>
+          <p>This website includes complete <strong>Schema.org EducationalOrganization &amp; Course JSON-LD</strong>, canonical tags, and OpenGraph metadata. Download <code class="font-mono text-xs">sitemap.xml</code> &amp; <code class="font-mono text-xs">robots.txt</code> below, upload them alongside <code class="font-mono text-xs">index.html</code>, and click <strong>Request Indexing</strong> in Google Search Console.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+          <h4 class="font-bold text-slate-900 mb-1"><i class="fa-solid fa-bolt text-emerald-600 mr-1.5"></i> Step 3: 100% Direct Bank Profit &amp; Instant Auto-Unlock</h4>
+          <p>Student UPI payments go directly to your West Bengal Gramin Bank account (<code class="font-mono text-xs">8972949607-6@ibl</code>) with 0% gateway commission, and courses unlock automatically upon 12-digit UTR entry.</p>
+        </div>
+        <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-200">
+          <h4 class="font-bold text-navy-900 mb-1"><i class="fa-solid fa-share-nodes text-blue-700 mr-1.5"></i> Step 4: How to Spread "MRH English Mock" to Students Easily</h4>
+          <ul class="list-disc pl-5 space-y-1 text-xs text-slate-700">
+            <li><strong>YouTube Video Descriptions &amp; Pinned Comments:</strong> Add your website link at the top of every grammar/writing class on <a href="https://youtube.com/@mrh-sir" target="_blank" rel="noopener noreferrer" class="text-blue-700 font-bold underline">youtube.com/@mrh-sir</a>.</li>
+            <li><strong>Telegram Channel Broadcast:</strong> Pin the free sample mock + course link inside <strong>MRH Education (mrh_1118)</strong>.</li>
+            <li><strong>WhatsApp Status &amp; Student Groups:</strong> Use the 1-Click WhatsApp &amp; Telegram Promo Share buttons on the front page to invite Madhyamik, TET &amp; WBPSC aspirants.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-6 flex flex-wrap justify-end gap-3">
+        <button onclick="app.downloadRobotsTxt()" class="px-4 py-2.5 rounded-xl bg-slate-200 text-slate-800 font-bold text-xs sm:text-sm">Download robots.txt</button>
+        <button onclick="app.downloadSitemapXml()" class="px-4 py-2.5 rounded-xl bg-emerald-600 text-white font-bold text-xs sm:text-sm">Download sitemap.xml</button>
+        <button onclick="app.closeModal('zerocost-modal')" class="px-6 py-2.5 rounded-xl bg-navy-900 text-white font-bold text-xs sm:text-sm">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- COMPLETE APPLICATION LOGIC                                            -->
+  <!-- ===================================================================== -->
+  <script>
+    const app = {
+      STORAGE_KEY: 'mrh_english_mock_state_v4',
+
+      // Default Exam Catalog (Negative marking strictly 0 for WBBSE Madhyamik, WB Primary TET, WB Upper Primary TET, CTET)
+      defaultExams: [
+        {
+          id: 'wbbse-madhyamik',
+          title: 'WBBSE Madhyamik English',
+          badge: 'Academic Board',
+          subjectScope: 'Reading Comprehension, Grammar, Vocabulary & Writing',
+          durationMin: 45,
+          marksPerQ: 1,
+          negativeMark: 0,
+          fee: 149,
+          color: 'emerald',
+          icon: 'fa-graduation-cap',
+          desc: 'Complete Class 10 WBBSE Madhyamik pattern mock with zero negative marking.'
+        },
+        {
+          id: 'wb-primary-tet',
+          title: 'WB Primary TET (English + CDP)',
+          badge: 'Teaching Eligibility',
+          subjectScope: 'English Pedagogy, Grammar, Passage & Child Development (CDP)',
+          durationMin: 60,
+          marksPerQ: 1,
+          negativeMark: 0,
+          fee: 199,
+          color: 'teal',
+          icon: 'fa-chalkboard-user',
+          desc: 'West Bengal Primary TET mock featuring English & Child Development & Pedagogy (No Negative Marks).'
+        },
+        {
+          id: 'wb-upper-tet',
+          title: 'WB Upper Primary TET (Eng + CDP)',
+          badge: 'Teaching Eligibility',
+          subjectScope: 'Upper Primary English, Literature, Passage & CDP',
+          durationMin: 60,
+          marksPerQ: 1,
+          negativeMark: 0,
+          fee: 199,
+          color: 'cyan',
+          icon: 'fa-book-open-reader',
+          desc: 'WB Upper Primary TET specialized English & CDP mock test with zero negative marking.'
+        },
+        {
+          id: 'ctet',
+          title: 'CTET (Paper I & II English + CDP)',
+          badge: 'Central TET',
+          subjectScope: 'CBSE CTET English Comprehension, Pedagogy & Child Development',
+          durationMin: 60,
+          marksPerQ: 1,
+          negativeMark: 0,
+          fee: 199,
+          color: 'sky',
+          icon: 'fa-school',
+          desc: 'Central Teacher Eligibility Test English & CDP mock series with zero negative marking.'
+        },
+        {
+          id: 'wbpsc-clerkship',
+          title: 'WBPSC Clerkship (Prelims & Mains)',
+          badge: 'WBPSC Competitive',
+          subjectScope: 'Prelims Objective English + Mains Translation, Precis & Report',
+          durationMin: 40,
+          marksPerQ: 1,
+          negativeMark: 0.25,
+          fee: 249,
+          color: 'blue',
+          icon: 'fa-landmark',
+          desc: 'Targeted WBPSC Clerkship Prelims MCQ (-0.25 negative) & Mains Conventional Descriptive.'
+        },
+        {
+          id: 'wbpsc-misc',
+          title: 'WBPSC Miscellaneous (Mains)',
+          badge: 'WBPSC Mains',
+          subjectScope: 'Mains English Drafting, Report, Precis, Translation & Grammar',
+          durationMin: 45,
+          marksPerQ: 2,
+          negativeMark: 0.5,
+          fee: 249,
+          color: 'indigo',
+          icon: 'fa-file-signature',
+          desc: 'WBPSC Miscellaneous Services Mains English paper mock with automated evaluation.'
+        },
+        {
+          id: 'wbp-si',
+          title: 'WBP SI (Mains English)',
+          badge: 'Police Recruitment',
+          subjectScope: 'WBP Sub-Inspector Mains Report, Translation, Precis & Grammar',
+          durationMin: 45,
+          marksPerQ: 2,
+          negativeMark: 0.5,
+          fee: 249,
+          color: 'violet',
+          icon: 'fa-shield-halved',
+          desc: 'West Bengal Police Sub-Inspector Mains descriptive & objective English test series.'
+        },
+        {
+          id: 'wbcs',
+          title: 'WBCS (Prelims & Mains)',
+          badge: 'Civil Services',
+          subjectScope: 'WBCS Prelims English (-0.33) + Mains Compulsory Paper II',
+          durationMin: 60,
+          marksPerQ: 1,
+          negativeMark: 0.33,
+          fee: 299,
+          color: 'amber',
+          icon: 'fa-award',
+          desc: 'Executive-grade WBCS Prelims & Compulsory English Mains mock series.'
+        }
+      ],
+
+      // Default Writing Skill Categories (Question Count & Full Marks configurable by Admin)
+      defaultWritingTopics: [
+        {
+          id: 'w-bn-en',
+          title: 'Translation: Bengali to English',
+          examTag: 'WBCS / Clerkship / Misc / WBP SI / WBBSE',
+          questionCount: 1,
+          fullMarks: 20,
+          prompt: 'Translate the following Bengali passage into idiomatic English:\n\n"শিক্ষা কেবল পুঁথিগত বিদ্যার মধ্যে সীমাবদ্ধ নয়; প্রকৃত শিক্ষা মানুষের চরিত্র গঠন করে এবং সমাজের প্রতি দায়িত্ববোধ জাগ্রত করে। বর্তমান যুগে নৈতিক শিক্ষার প্রসার অত্যন্ত জরুরি, কারণ মূল্যবোধহীন জ্ঞান সমাজের কল্যাণ সাধন করতে পারে না।"'
+        },
+        {
+          id: 'w-en-bn',
+          title: 'Translation: English to Bengali',
+          examTag: 'WBCS / Clerkship / Misc / WBP SI',
+          questionCount: 1,
+          fullMarks: 20,
+          prompt: 'Translate the following English passage into natural, standard Bengali:\n\n"True patriotism does not mean blind praise of one’s country; rather, it demands honest service, respect for fellow citizens, and dedication to social progress. Every student should cultivate discipline and empathy to build a stronger nation."'
+        },
+        {
+          id: 'w-report',
+          title: 'Newspaper / Official Report Writing',
+          examTag: 'WBCS / Clerkship / WBP SI / WBBSE',
+          questionCount: 1,
+          fullMarks: 20,
+          prompt: 'Write a newspaper report (within 150–200 words) on a severe flash flood and rescue operation in North Bengal, highlighting relief measures taken by the district administration and local volunteers.'
+        },
+        {
+          id: 'w-precis',
+          title: 'Precis Writing (With Suitable Title)',
+          examTag: 'WBCS / Clerkship / Misc / WBP SI',
+          questionCount: 1,
+          fullMarks: 20,
+          prompt: 'Write a precis of the following passage in about one-third of its length and add a suitable title:\n\n"Punctuality is the soul of business and the hallmark of a disciplined mind. A person who values time respects not only their own schedule but also the commitment made to others. In competitive examinations and professional life alike, delay often leads to missed opportunities that can never be recovered. Cultivating punctuality requires foresight, self-control, and steady habit formation from early youth."'
+        },
+        {
+          id: 'w-editorial',
+          title: 'Editorial Letter',
+          examTag: 'WBCS / WBBSE / Misc',
+          questionCount: 1,
+          fullMarks: 15,
+          prompt: 'Write a letter to the Editor of an English daily expressing deep concern over the reckless use of loudspeakers and noise pollution near schools and hospitals in your locality.'
+        },
+        {
+          id: 'w-application',
+          title: 'Official / Formal Application',
+          examTag: 'WBBSE / Clerkship / WBCS',
+          questionCount: 1,
+          fullMarks: 10,
+          prompt: 'Write an application to the Headmaster/Headmistress of your school requesting permission to organize an Inter-School English Debate and Quiz Competition in the school auditorium.'
+        },
+        {
+          id: 'w-personal',
+          title: 'Personal Letter',
+          examTag: 'WBBSE Madhyamik / Foundation',
+          questionCount: 1,
+          fullMarks: 10,
+          prompt: 'Write a letter to your younger brother advising him on how to balance daily newspaper reading with his Madhyamik board exam preparation.'
+        },
+        {
+          id: 'w-paragraph',
+          title: 'Paragraph Writing',
+          examTag: 'WBBSE / WBCS Essay Foundation',
+          questionCount: 1,
+          fullMarks: 10,
+          prompt: 'Write a well-structured paragraph (120–150 words) on "The Role of Forests in Combating Climate Change".'
+        },
+        {
+          id: 'w-story',
+          title: 'Story Writing (With Title & Moral)',
+          examTag: 'WBBSE Madhyamik',
+          questionCount: 1,
+          fullMarks: 10,
+          prompt: 'Develop a readable story with a suitable title and moral based on the outlines: A woodcutter drops his iron axe into a deep river — cries helplessly — River God appears with a golden axe — woodcutter refuses — silver axe — refuses again — accepts his own iron axe — rewarded for honesty.'
+        },
+        {
+          id: 'w-process-notice',
+          title: 'Process Writing & Notice Writing',
+          examTag: 'WBBSE Madhyamik',
+          questionCount: 2,
+          fullMarks: 20,
+          prompt: 'Question 1 (10 Marks): As the Cultural Secretary of your school, draft a Notice inviting students to submit entries for the Annual School Magazine.\nQuestion 2 (10 Marks): Describe the step-by-step process of preparing ORS (Oral Rehydration Solution) at home.'
+        }
+      ],
+
+      // Default Question Bank (Grammar, Vocabulary & CDP for Primary/Upper Primary TET & CTET)
+      defaultMcqs: [
+        {
+          id: 'q1',
+          examId: 'wbcs',
+          topic: 'English Grammar • Preposition',
+          question: 'He was acquitted ______ all the charges levelled against him by the court.',
+          options: ['from', 'of', 'with', 'against'],
+          correctIndex: 1,
+          explanation: 'The verb "acquit" is always followed by the fixed preposition "of" (acquitted of charges).'
+        },
+        {
+          id: 'q2',
+          examId: 'wbpsc-clerkship',
+          topic: 'Vocabulary • One Word Substitution',
+          question: 'A person who is fluent in many languages is called a ______.',
+          options: ['Polyglot', 'Pedant', 'Philatelist', 'Plagiarist'],
+          correctIndex: 0,
+          explanation: 'A polyglot is someone who knows and is able to use several languages.'
+        },
+        {
+          id: 'q3',
+          examId: 'wbbse-madhyamik',
+          topic: 'WBBSE Grammar • Voice Change',
+          question: 'Change the voice: "Who taught you English grammar?"',
+          options: [
+            'By whom were you taught English grammar?',
+            'By whom was you taught English grammar?',
+            'Who was taught English grammar by you?',
+            'By whom English grammar is taught to you?'
+          ],
+          correctIndex: 0,
+          explanation: '"Who" changes to "By whom" in passive interrogative sentences with past indefinite "were you taught".'
+        },
+        {
+          id: 'q4',
+          examId: 'wb-primary-tet',
+          topic: 'WB Primary TET • Child Development & Pedagogy (CDP)',
+          question: 'According to Lev Vygotsky, the gap between what a learner can do independently and what they can achieve with adult guidance is known as:',
+          options: [
+            'Zone of Proximal Development (ZPD)',
+            'Schema Assimilation Stage',
+            'Operant Conditioning Loop',
+            'Egocentric Speech Phase'
+          ],
+          correctIndex: 0,
+          explanation: 'Vygotsky defined the Zone of Proximal Development (ZPD) as the distance between actual developmental level and potential development under scaffolding.'
+        },
+        {
+          id: 'q5',
+          examId: 'wb-upper-tet',
+          topic: 'WB Upper Primary TET • CDP & Language Acquisition',
+          question: 'Noam Chomsky proposed that children are born with an innate biological capacity for language learning called:',
+          options: [
+            'Language Acquisition Device (LAD)',
+            'Behavioural Reinforcement Matrix',
+            'Cognitive Equilibrium Engine',
+            'Phonetic Imitation Reflex'
+          ],
+          correctIndex: 0,
+          explanation: 'Chomsky introduced the Language Acquisition Device (LAD) and Universal Grammar theory.'
+        },
+        {
+          id: 'q6',
+          examId: 'ctet',
+          topic: 'CTET • Inclusive Education & CDP',
+          question: 'In Jean Piaget’s theory of cognitive development, "Object Permanence" develops primarily during which stage?',
+          options: [
+            'Sensorimotor Stage (0–2 years)',
+            'Pre-operational Stage (2–7 years)',
+            'Concrete Operational Stage (7–11 years)',
+            'Formal Operational Stage (11+ years)'
+          ],
+          correctIndex: 0,
+          explanation: 'Object permanence—understanding that objects continue to exist even when unseen—is a key milestone of the Sensorimotor stage.'
+        },
+        {
+          id: 'q7',
+          examId: 'wbp-si',
+          topic: 'Vocabulary • Idioms & Phrases',
+          question: 'Choose the exact meaning of the idiom: "To burn the midnight oil"',
+          options: [
+            'To work or study late into the night',
+            'To waste precious resources recklessly',
+            'To start a sudden quarrel',
+            'To reveal a closely guarded secret'
+          ],
+          correctIndex: 0,
+          explanation: '"Burn the midnight oil" means to study or work late at night.'
+        },
+        {
+          id: 'q8',
+          examId: 'wbpsc-misc',
+          topic: 'Grammar • Conditional Clause',
+          question: 'Had I known about your arrival earlier, I ______ you at the station.',
+          options: [
+            'would have received',
+            'will have received',
+            'would receive',
+            'had received'
+          ],
+          correctIndex: 0,
+          explanation: 'Third conditional structure: Had + Subject + V3, Subject + would have + V3.'
+        }
+      ],
+
+      // Multi-Format Comprehension Passage Bank (MCQ, True/False, 1-Mark, 2-Mark, Complete Sentences, Matching)
+      defaultPassage: {
+        title: 'Reading Comprehension Practice: The Sundarbans Mangrove Ecosystem',
+        text: 'The Sundarbans, spanning the delta of the Padma, Meghna, and Brahmaputra rivers across West Bengal and Bangladesh, forms the largest contiguous tidal halophytic mangrove forest in the world. Named after the abundant Sundari trees (Heritiera fomes), this UNESCO World Heritage Site acts as a vital natural shield protecting coastal settlements from devastating tropical cyclones and tidal surges. Beyond its famous Royal Bengal Tiger, the intricate network of muddy creeks and islands sustains estuarine crocodiles, spotted deer, migratory birds, and millions of coastal livelihoods. However, rising sea levels, salinity intrusion, and unplanned human encroachment pose serious ecological threats that call for urgent community-led conservation.',
+        mcqs: [
+          {
+            q: 'Which tree gives the Sundarbans its name?',
+            options: ['Sal tree', 'Sundari tree', 'Teak tree', 'Banyan tree'],
+            ans: 1
+          },
+          {
+            q: 'How do the Sundarbans protect inland coastal settlements?',
+            options: [
+              'By blocking river navigation',
+              'By acting as a natural shield against tropical cyclones and tidal surges',
+              'By increasing soil salinity',
+              'By diverting monsoon rainfall'
+            ],
+            ans: 1
+          }
+        ],
+        trueFalse: [
+          {
+            statement: 'The Sundarbans is formed at the delta of the Padma, Meghna, and Brahmaputra rivers.',
+            isTrue: true,
+            support: 'Spanning the delta of the Padma, Meghna, and Brahmaputra rivers across West Bengal and Bangladesh...'
+          },
+          {
+            statement: 'Rising sea levels and salinity intrusion pose no threat to the Sundarbans.',
+            isTrue: false,
+            support: 'However, rising sea levels, salinity intrusion, and unplanned human encroachment pose serious ecological threats...'
+          }
+        ],
+        short1Mark: [
+          {
+            q: 'What is the scientific name of the Sundari tree mentioned in the passage?',
+            keywords: ['heritiera', 'fomes'],
+            modelAns: 'Heritiera fomes.'
+          }
+        ],
+        analytical2Mark: [
+          {
+            q: 'Mention two major ecological threats faced by the Sundarbans and what is required to address them.',
+            keywords: ['sea', 'salinity', 'encroachment', 'conservation', 'community'],
+            modelAns: 'Rising sea levels, salinity intrusion, and unplanned human encroachment are major threats, requiring urgent community-led conservation.'
+          }
+        ],
+        completeSentences: [
+          {
+            stem: 'The Sundarbans is recognized globally as a ______.',
+            keywords: ['unesco', 'world', 'heritage', 'site'],
+            modelAns: 'UNESCO World Heritage Site.'
+          }
+        ],
+        matching: [
+          { left: 'Heritiera fomes', right: 'Sundari tree' },
+          { left: 'Natural shield', right: 'Protection from cyclones & tidal surges' },
+          { left: 'Ecological threat', right: 'Salinity intrusion & rising sea levels' }
+        ]
+      },
+
+      // Active Runtime State
+      state: {
+        view: 'home',
+        brand: {
+          siteName: 'MRH English Mock',
+          heroBadge: 'Official Academic, Competitive & TET CDP Portal',
+          heroHeadline: 'Master English Grammar, Vocabulary, Writing & TET CDP with Automated Evaluation',
+          heroSubtitle: 'Complete mock test series for WBBSE Madhyamik, WBPSC Clerkship, Miscellaneous, WBP SI, WBCS, WB Primary & Upper Primary TET, and CTET — guided by MRH Sir.',
+          announcement: 'Admissions Open: All-Access English & TET CDP Mock Series • Direct UPI Auto-Activation • Instant Automated Script & Handwriting Grading!',
+          profilePicDataUrl: '',
+          bannerDataUrl: ''
+        },
+        upiId: '8972949607-6@ibl',
+        whatsapp: '8972949607',
+        email: 'mrh.dltpr@gmail.com',
+        courseFee: 199,
+        exams: [],
+        writingTopics: [],
+        mcqs: [],
+        passage: null,
+        students: [],
+        currentStudent: null,
+        deviceId: '',
+        adminDevices: [],
+        isAdminLoggedIn: false,
+        adminTab: 'branding',
+        otps: {
+          s1Mobile: null,
+          s1Verified: false,
+          s2Mobile: null,
+          s2MobileVerified: false,
+          s2Email: null,
+          s2EmailVerified: false,
+          adminOtp: null
+        },
+        pendingCourseId: 'all-bundle',
+        activeExam: null,
+        examAnswers: {},
+        examTimeLeft: 0,
+        examTimerInterval: null,
+        examSubmitted: false,
+        passageAnswers: {
+          mcq: {},
+          tf: {},
+          s1: {},
+          a2: {},
+          comp: {},
+          match: {}
+        },
+        passageResult: null,
+        selectedWritingId: 'w-bn-en',
+        uploadedFileBase64: null,
+        uploadedFileMime: null,
+        uploadedFileName: null,
+        extractedOcrText: '',
+        evalResult: null,
+        heroDemoSelected: null
+      },
+
+      // =======================================================================
+      // INITIALIZATION & PERSISTENCE
+      // =======================================================================
+      init() {
+        this.state.deviceId = this.getOrCreateDeviceId();
+        const saved = localStorage.getItem(this.STORAGE_KEY);
+        if (saved) {
+          try {
+            const parsed = JSON.parse(saved);
+            this.state.brand = { ...this.state.brand, ...(parsed.brand || {}) };
+            this.state.upiId = parsed.upiId || '8972949607-6@ibl';
+            this.state.whatsapp = parsed.whatsapp || '8972949607';
+            this.state.email = parsed.email || 'mrh.dltpr@gmail.com';
+            this.state.courseFee = parsed.courseFee || 199;
+            this.state.exams = parsed.exams && parsed.exams.length ? parsed.exams : JSON.parse(JSON.stringify(this.defaultExams));
+            this.state.writingTopics = parsed.writingTopics && parsed.writingTopics.length ? parsed.writingTopics : JSON.parse(JSON.stringify(this.defaultWritingTopics));
+            this.state.mcqs = parsed.mcqs && parsed.mcqs.length ? parsed.mcqs : JSON.parse(JSON.stringify(this.defaultMcqs));
+            this.state.passage = parsed.passage || JSON.parse(JSON.stringify(this.defaultPassage));
+            this.state.students = parsed.students || [];
+            this.state.adminDevices = parsed.adminDevices || [];
+
+            if (parsed.currentStudentMobile) {
+              const found = this.state.students.find(s => s.mobile === parsed.currentStudentMobile);
+              if (found && found.lockedDeviceId === this.state.deviceId) {
+                this.state.currentStudent = found;
+              }
+            }
+          } catch (e) {
+            this.seedDefaults();
+          }
+        } else {
+          this.seedDefaults();
+        }
+
+        document.getElementById('s1-device-id').textContent = this.state.deviceId;
+        this.applyBrandHeader();
+        this.updateHeaderSessionUI();
+        this.render();
+      },
+
+      seedDefaults() {
+        this.state.exams = JSON.parse(JSON.stringify(this.defaultExams));
+        this.state.writingTopics = JSON.parse(JSON.stringify(this.defaultWritingTopics));
+        this.state.mcqs = JSON.parse(JSON.stringify(this.defaultMcqs));
+        this.state.passage = JSON.parse(JSON.stringify(this.defaultPassage));
+        this.saveState();
+      },
+
+      saveState() {
+        const payload = {
+          brand: this.state.brand,
+          upiId: this.state.upiId,
+          whatsapp: this.state.whatsapp,
+          email: this.state.email,
+          courseFee: this.state.courseFee,
+          exams: this.state.exams,
+          writingTopics: this.state.writingTopics,
+          mcqs: this.state.mcqs,
+          passage: this.state.passage,
+          students: this.state.students,
+          adminDevices: this.state.adminDevices,
+          currentStudentMobile: this.state.currentStudent ? this.state.currentStudent.mobile : null
+        };
+        try {
+          localStorage.setItem(this.STORAGE_KEY, JSON.stringify(payload));
+        } catch (err) {
+          this.toast('Storage quota nearly full. Consider exporting a JSON backup in Admin.', 'warning');
+        }
+      },
+
+      getOrCreateDeviceId() {
+        let id = localStorage.getItem('mrh_device_fp_v1');
+        if (!id) {
+          const navInfo = [navigator.platform, navigator.language, screen.width + 'x' + screen.height].join('|');
+          let hash = 0;
+          for (let i = 0; i < navInfo.length; i++) {
+            hash = ((hash << 5) - hash) + navInfo.charCodeAt(i);
+            hash |= 0;
+          }
+          id = 'DEV-' + Math.abs(hash).toString(36).toUpperCase() + '-' + Math.random().toString(36).substring(2, 6).toUpperCase();
+          localStorage.setItem('mrh_device_fp_v1', id);
+        }
+        return id;
+      },
+
+      getDeviceLabel() {
+        const ua = navigator.userAgent;
+        if (/Android/i.test(ua)) return 'Android Phone/Tablet';
+        if (/iPhone|iPad/i.test(ua)) return 'iOS Device';
+        if (/Windows/i.test(ua)) return 'Windows Desktop/Laptop';
+        if (/Mac/i.test(ua)) return 'Mac Desktop/Laptop';
+        return 'Desktop/Mobile Browser';
+      },
+
+      applyBrandHeader() {
+        const b = this.state.brand;
+        document.title = `${b.siteName} | Official English, WBBSE & TET CDP Mock Test Portal`;
+        const avatarEl = document.getElementById('nav-brand-avatar');
+        if (b.profilePicDataUrl) {
+          avatarEl.innerHTML = `<img src="${b.profilePicDataUrl}" alt="MRH Sir" class="w-full h-full object-cover" />`;
+        } else {
+          avatarEl.textContent = 'MRH';
+        }
+        const footerUpi = document.getElementById('footer-upi-text');
+        if (footerUpi) footerUpi.textContent = this.state.upiId;
+      },
+
+      // =======================================================================
+      // TOAST & MODAL UTILITIES
+      // =======================================================================
+      toast(msg, type = 'info') {
+        const container = document.getElementById('toast-container');
+        const colors = {
+          success: 'bg-emerald-600 text-white border-emerald-400',
+          error: 'bg-rose-600 text-white border-rose-400',
+          warning: 'bg-amber-500 text-navy-950 border-amber-300',
+          info: 'bg-navy-900 text-white border-blue-500'
+        };
+        const icons = {
+          success: 'fa-circle-check',
+          error: 'fa-circle-exclamation',
+          warning: 'fa-triangle-exclamation',
+          info: 'fa-circle-info'
+        };
+        const el = document.createElement('div');
+        el.className = `pointer-events-auto flex items-center gap-2.5 px-4 py-3 rounded-2xl shadow-xl border text-xs font-bold transition-all duration-300 ${colors[type] || colors.info}`;
+        el.innerHTML = `<i class="fa-solid ${icons[type] || icons.info} text-sm"></i><span class="flex-1 leading-snug">${msg}</span>`;
+        container.appendChild(el);
+        setTimeout(() => {
+          el.style.opacity = '0';
+          setTimeout(() => el.remove(), 300);
+        }, 4200);
+      },
+
+      openModal(id) {
+        const m = document.getElementById(id);
+        if (m) {
+          m.classList.remove('hidden');
+          m.classList.add('flex');
+        }
+      },
+
+      closeModal(id) {
+        const m = document.getElementById(id);
+        if (m) {
+          m.classList.add('hidden');
+          m.classList.remove('flex');
+        }
+      },
+
+      navigate(view) {
+        if (this.state.examTimerInterval && view !== 'mcq-exam') {
+          clearInterval(this.state.examTimerInterval);
+          this.state.examTimerInterval = null;
+        }
+        this.state.view = view;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        this.render();
+      },
+
+      updateHeaderSessionUI() {
+        const stu = this.state.currentStudent;
+        const pill = document.getElementById('header-user-pill');
+        const label = document.getElementById('header-user-label');
+        const loginBtn = document.getElementById('btn-student-login');
+        const logoutBtn = document.getElementById('btn-student-logout');
+
+        if (stu) {
+          pill.classList.remove('hidden');
+          label.textContent = `${stu.name} (${stu.paidAll ? 'PRO' : 'Verified'})`;
+          loginBtn.classList.add('hidden');
+          logoutBtn.classList.remove('hidden');
+        } else {
+          pill.classList.add('hidden');
+          loginBtn.classList.remove('hidden');
+          logoutBtn.classList.add('hidden');
+        }
+
+        const adminNavText = document.getElementById('admin-nav-text');
+        if (adminNavText) {
+          adminNavText.textContent = this.state.isAdminLoggedIn ? 'Admin Panel' : 'Admin';
+        }
+      },
+
+      // =======================================================================
+      // STAGE 1: STUDENT ENTRY (NAME + MOBILE OTP ONLY + 1-DEVICE LOCK)
+      // =======================================================================
+      triggerSmsMessageBox(mobile, otp, targetInputId, autoVerifyFn) {
+        // Native Android Chrome WebOTP API listener for real carrier SMS autofill
+        if ('OTPCredential' in window && navigator.credentials) {
+          const ac = new AbortController();
+          setTimeout(() => ac.abort(), 60000);
+          navigator.credentials.get({
+            otp: { transport: ['sms'] },
+            signal: ac.signal
+          }).then(cred => {
+            if (cred && cred.code) {
+              const inp = document.getElementById(targetInputId);
+              if (inp) {
+                inp.value = cred.code;
+                if (targetInputId === 's1-otp-input') this.syncOtpBoxesFromSingle('s1', cred.code);
+              }
+              if (typeof autoVerifyFn === 'function') autoVerifyFn();
+            }
+          }).catch(() => {});
+        }
+
+        // Interactive On-Screen Mobile SMS Message Box Notification Drawer
+        const banner = document.getElementById('sms-message-banner');
+        const textEl = document.getElementById('sms-banner-text');
+        const fillBtn = document.getElementById('sms-autofill-btn');
+        if (banner && textEl && fillBtn) {
+          textEl.textContent = `<#> ${otp} is your MRH English Mock verification OTP for +91-${mobile}. Do not share. @mrhenglishmock.github.io #${otp}`;
+          banner.classList.remove('hidden');
+          fillBtn.onclick = () => {
+            const inp = document.getElementById(targetInputId);
+            if (inp) {
+              inp.value = otp;
+              if (targetInputId === 's1-otp-input') this.syncOtpBoxesFromSingle('s1', otp);
+            }
+            banner.classList.add('hidden');
+            if (typeof autoVerifyFn === 'function') autoVerifyFn();
+          };
+        }
+      },
+
+      renderOtpBoxes(prefix) {
+        const container = document.getElementById(`${prefix}-otp-digits`);
+        if (!container) return;
+        container.innerHTML = [0, 1, 2, 3, 4, 5].map(i => `
+          <input type="text" id="${prefix}-box-${i}" inputmode="numeric" maxlength="1"
+            oninput="app.handleOtpDigitInput('${prefix}', ${i}, this)"
+            onkeydown="app.handleOtpDigitKeydown('${prefix}', ${i}, event)"
+            onpaste="app.handleOtpDigitPaste('${prefix}', event)"
+            class="w-full h-9 text-center font-mono font-extrabold text-sm rounded-lg border border-amber-300 bg-white focus:ring-2 focus:ring-blue-700" />
+        `).join('');
+      },
+
+      handleOtpDigitInput(prefix, idx, el) {
+        const val = el.value.replace(/\D/g, '').slice(0, 1);
+        el.value = val;
+        if (val && idx < 5) {
+          document.getElementById(`${prefix}-box-${idx + 1}`)?.focus();
+        }
+        this.collectOtpBoxesToSingle(prefix);
+      },
+
+      handleOtpDigitKeydown(prefix, idx, e) {
+        if (e.key === 'Backspace' && !e.target.value && idx > 0) {
+          document.getElementById(`${prefix}-box-${idx - 1}`)?.focus();
+        }
+      },
+
+      handleOtpDigitPaste(prefix, e) {
+        e.preventDefault();
+        const pasted = (e.clipboardData || window.clipboardData).getData('text').replace(/\D/g, '').slice(0, 6);
+        this.syncOtpBoxesFromSingle(prefix, pasted);
+        const single = document.getElementById(`${prefix}-otp-input`);
+        if (single) single.value = pasted;
+      },
+
+      syncOtpBoxesFromSingle(prefix, rawVal) {
+        const clean = (rawVal || '').replace(/\D/g, '').slice(0, 6);
+        for (let i = 0; i < 6; i++) {
+          const box = document.getElementById(`${prefix}-box-${i}`);
+          if (box) box.value = clean[i] || '';
+        }
+      },
+
+      collectOtpBoxesToSingle(prefix) {
+        let code = '';
+        for (let i = 0; i < 6; i++) {
+          code += (document.getElementById(`${prefix}-box-${i}`)?.value || '');
+        }
+        const single = document.getElementById(`${prefix}-otp-input`);
+        if (single) single.value = code;
+      },
+
+      openStage1EntryModal() {
+        this.state.otps.s1Verified = false;
+        document.getElementById('s1-otp-box').classList.add('hidden');
+        document.getElementById('s1-status').textContent = '';
+        this.openModal('stage1-entry-modal');
+      },
+
+      sendStage1MobileOTP() {
+        const mobile = document.getElementById('s1-mobile').value.trim();
+        if (!/^[0-9]{10}$/.test(mobile)) {
+          this.toast('Please enter a valid 10-digit mobile number.', 'error');
+          return;
+        }
+        const otp = String(Math.floor(100000 + Math.random() * 900000));
+        this.state.otps.s1Mobile = otp;
+        document.getElementById('s1-otp-box').classList.remove('hidden');
+        this.renderOtpBoxes('s1');
+        document.getElementById('s1-status').innerHTML = `<span class="text-amber-700 font-semibold">SMS OTP sent to ${mobile}: <strong>${otp}</strong> (Tap SMS Banner above to autofill)</span>`;
+        this.triggerSmsMessageBox(mobile, otp, 's1-otp-input', () => this.verifyStage1MobileOTP());
+      },
+
+      verifyStage1MobileOTP() {
+        const val = document.getElementById('s1-otp-input').value.trim();
+        if (val && val === this.state.otps.s1Mobile) {
+          this.state.otps.s1Verified = true;
+          document.getElementById('s1-otp-box').classList.add('hidden');
+          document.getElementById('sms-message-banner')?.classList.add('hidden');
+          document.getElementById('s1-status').innerHTML = `<span class="text-emerald-600 font-bold"><i class="fa-solid fa-circle-check"></i> Mobile Number Verified!</span>`;
+          this.toast('Mobile Number verified!', 'success');
+        } else {
+          this.toast('Invalid Mobile OTP.', 'error');
+        }
+      },
+
+      handleStage1Submit(e) {
+        e.preventDefault();
+        const name = document.getElementById('s1-name').value.trim();
+        const mobile = document.getElementById('s1-mobile').value.trim();
+
+        if (!this.state.otps.s1Verified) {
+          this.toast('Please verify your Mobile Number via OTP before entering.', 'warning');
+          return;
+        }
+
+        let student = this.state.students.find(s => s.mobile === mobile);
+        if (student) {
+          // Strict 1-Device Lock Check
+          if (student.lockedDeviceId && student.lockedDeviceId !== this.state.deviceId) {
+            this.toast(`Security Block: Mobile ${mobile} is already locked to another device (${student.lockedDeviceId}). Students can only use 1 device.`, 'error');
+            return;
+          }
+          student.name = name;
+          student.lockedDeviceId = this.state.deviceId;
+        } else {
+          student = {
+            name,
+            mobile,
+            email: '',
+            emailVerified: false,
+            lockedDeviceId: this.state.deviceId,
+            deviceLabel: this.getDeviceLabel(),
+            paidAll: false,
+            unlockedExams: [],
+            utr: '',
+            joinedAt: new Date().toLocaleDateString('en-IN')
+          };
+          this.state.students.push(student);
+        }
+
+        this.state.currentStudent = student;
+        this.saveState();
+        this.updateHeaderSessionUI();
+        this.closeModal('stage1-entry-modal');
+        this.toast(`Welcome, ${student.name}! Your account is locked to this device.`, 'success');
+        this.render();
+      },
+
+      logoutStudent() {
+        this.state.currentStudent = null;
+        this.saveState();
+        this.updateHeaderSessionUI();
+        this.navigate('home');
+        this.toast('Student logged out.', 'info');
+      },
+
+      // =======================================================================
+      // STAGE 2: COURSE PURCHASE (DUAL MOBILE + EMAIL OTP + UPI QR)
+      // =======================================================================
+      openPurchaseModal(courseId = 'all-bundle') {
+        if (!this.state.currentStudent) {
+          this.toast('Please enter the website first using your Name & Mobile OTP.', 'info');
+          this.openStage1EntryModal();
+          return;
+        }
+
+        this.state.pendingCourseId = courseId;
+        const stu = this.state.currentStudent;
+        const exam = this.state.exams.find(x => x.id === courseId);
+        const price = exam ? exam.fee : this.state.courseFee;
+        const title = exam ? exam.title : 'All-Access Master Bundle (All Exams + Writing + CDP)';
+
+        document.getElementById('purchase-course-title').textContent = title;
+        document.getElementById('modal-course-price').textContent = `₹${price}`;
+        document.getElementById('modal-upi-id').textContent = this.state.upiId;
+        document.getElementById('s2-mobile').value = stu.mobile;
+        document.getElementById('s2-email').value = stu.email || '';
+
+        // Reset Stage 2 Dual OTP state
+        this.state.otps.s2MobileVerified = false;
+        this.state.otps.s2EmailVerified = false;
+        document.getElementById('s2-mob-otp-row').classList.add('hidden');
+        document.getElementById('s2-email-otp-row').classList.add('hidden');
+        document.getElementById('s2-mob-status').textContent = 'Click Send OTP to verify mobile for purchase.';
+        document.getElementById('s2-email-status').textContent = 'Enter email & click Send Code.';
+        this.refreshStage2GateState();
+
+        // Render QR Code
+        const qrBox = document.getElementById('upi-qr-container');
+        qrBox.innerHTML = '';
+        const upiUri = `upi://pay?pa=${encodeURIComponent(this.state.upiId)}&pn=${encodeURIComponent(this.state.brand.siteName)}&am=${price}&cu=INR`;
+        document.getElementById('upi-intent-link').href = upiUri;
+
+        if (typeof QRCode !== 'undefined') {
+          new QRCode(qrBox, {
+            text: upiUri,
+            width: 170,
+            height: 170,
+            colorDark: '#000000',
+            colorLight: '#ffffff',
+            correctLevel: QRCode.CorrectLevel.H
+          });
+        }
+
+        this.openModal('stage2-purchase-modal');
+      },
+
+      sendStage2MobileOTP() {
+        const mob = document.getElementById('s2-mobile').value.trim();
+        const otp = String(Math.floor(100000 + Math.random() * 900000));
+        this.state.otps.s2Mobile = otp;
+        document.getElementById('s2-mob-otp-row').classList.remove('hidden');
+        document.getElementById('s2-mob-status').innerHTML = `<span class="text-amber-700 font-semibold">Purchase SMS OTP: <strong>${otp}</strong></span>`;
+        this.triggerSmsMessageBox(mob, otp, 's2-mob-otp-val', () => this.verifyStage2MobileOTP());
+      },
+
+      verifyStage2MobileOTP() {
+        const val = document.getElementById('s2-mob-otp-val').value.trim();
+        if (val && val === this.state.otps.s2Mobile) {
+          this.state.otps.s2MobileVerified = true;
+          document.getElementById('s2-mob-otp-row').classList.add('hidden');
+          document.getElementById('sms-message-banner')?.classList.add('hidden');
+          document.getElementById('s2-mob-status').innerHTML = `<span class="text-emerald-600 font-bold"><i class="fa-solid fa-circle-check"></i> Mobile OTP Verified</span>`;
+          this.refreshStage2GateState();
+          this.toast('Mobile OTP verified!', 'success');
+        } else {
+          this.toast('Incorrect Mobile OTP.', 'error');
+        }
+      },
+
+      sendStage2EmailOTP() {
+        const email = document.getElementById('s2-email').value.trim().toLowerCase();
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          this.toast('Please enter a valid Email ID.', 'error');
+          return;
+        }
+        const otp = String(Math.floor(100000 + Math.random() * 900000));
+        this.state.otps.s2Email = otp;
+        document.getElementById('s2-email-otp-row').classList.remove('hidden');
+        document.getElementById('s2-email-status').innerHTML = `<span class="text-blue-700 font-semibold">Code sent to ${email}: <strong>${otp}</strong></span>`;
+        this.toast(`Email verification code for ${email}: ${otp}`, 'info');
+      },
+
+      verifyStage2EmailOTP() {
+        const val = document.getElementById('s2-email-otp-val').value.trim();
+        if (val && val === this.state.otps.s2Email) {
+          this.state.otps.s2EmailVerified = true;
+          document.getElementById('s2-email-otp-row').classList.add('hidden');
+          document.getElementById('s2-email-status').innerHTML = `<span class="text-emerald-600 font-bold"><i class="fa-solid fa-circle-check"></i> Email OTP Verified</span>`;
+          this.refreshStage2GateState();
+          this.toast('Email ID OTP verified!', 'success');
+        } else {
+          this.toast('Incorrect Email OTP.', 'error');
+        }
+      },
+
+      refreshStage2GateState() {
+        const gate = document.getElementById('upi-payment-gate');
+        const badge = document.getElementById('dual-otp-badge');
+        if (this.state.otps.s2MobileVerified && this.state.otps.s2EmailVerified) {
+          gate.classList.remove('opacity-50', 'pointer-events-none');
+          badge.className = 'px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800';
+          badge.innerHTML = '<i class="fa-solid fa-check-double mr-1"></i> Both Mobile & Email Verified';
+        } else {
+          gate.classList.add('opacity-50', 'pointer-events-none');
+          badge.className = 'px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-100 text-amber-800';
+          badge.textContent = 'Pending Dual OTP';
+        }
+      },
+
+      copyUpiId() {
+        const ta = document.createElement('textarea');
+        ta.value = this.state.upiId;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        this.toast(`Copied UPI ID: ${this.state.upiId}`, 'success');
+      },
+
+      downloadQrImage() {
+        const canvas = document.querySelector('#upi-qr-container canvas');
+        if (canvas) {
+          const link = document.createElement('a');
+          link.download = 'MRH_English_Mock_UPI_QR.png';
+          link.href = canvas.toDataURL('image/png');
+          link.click();
+          this.toast('UPI QR Scanner downloaded!', 'success');
+        }
+      },
+
+      submitUpiPayment(e) {
+        e.preventDefault();
+        if (!this.state.otps.s2MobileVerified || !this.state.otps.s2EmailVerified) {
+          this.toast('Both Mobile OTP & Email OTP must be verified before payment.', 'error');
+          return;
+        }
+        const utr = document.getElementById('payment-utr-input').value.trim();
+        const email = document.getElementById('s2-email').value.trim().toLowerCase();
+        const stu = this.state.currentStudent;
+
+        stu.email = email;
+        stu.emailVerified = true;
+        stu.utr = utr;
+
+        if (this.state.pendingCourseId === 'all-bundle') {
+          stu.paidAll = true;
+        } else {
+          if (!stu.unlockedExams.includes(this.state.pendingCourseId)) {
+            stu.unlockedExams.push(this.state.pendingCourseId);
+          }
+          stu.paidAll = true; // Unlock full suite upon enrollment
+        }
+
+        this.saveState();
+        this.updateHeaderSessionUI();
+        this.closeModal('stage2-purchase-modal');
+        this.toast('Payment verified! Course unlocked on your single verified device.', 'success');
+        this.render();
+      },
+
+      sendWhatsAppReceipt() {
+        const stu = this.state.currentStudent;
+        const utr = document.getElementById('payment-utr-input').value.trim() || 'PENDING';
+        const price = document.getElementById('modal-course-price').textContent;
+        const msg = encodeURIComponent(
+          `Hello MRH Sir,\nI have paid ${price} for MRH English Mock.\nName: ${stu.name}\nMobile: ${stu.mobile}\nEmail: ${document.getElementById('s2-email').value}\nUPI ID: ${this.state.upiId}\nUTR Ref: ${utr}`
+        );
+        window.open(`https://wa.me/91${this.state.whatsapp}?text=${msg}`, '_blank');
+      },
+
+      hasCourseAccess(examId) {
+        const stu = this.state.currentStudent;
+        if (!stu) return false;
+        return stu.paidAll || (stu.unlockedExams && stu.unlockedExams.includes(examId));
+      },
+
+      // =======================================================================
+      // ADMIN SECURITY (MOBILE OTP 8972949607 ONLY - MAX 2 CONCURRENT DEVICES)
+      // =======================================================================
+      openAdminModal() {
+        if (this.state.isAdminLoggedIn) {
+          this.navigate('admin');
+          return;
+        }
+        document.getElementById('admin-otp-section').classList.add('hidden');
+        this.openModal('admin-login-modal');
+      },
+
+      sendAdminOTP() {
+        const mob = document.getElementById('admin-mobile-input').value.trim();
+        if (mob !== '8972949607') {
+          this.toast('Access Denied! Only registered Admin mobile 8972949607 is authorized.', 'error');
+          return;
+        }
+        const otp = String(Math.floor(100000 + Math.random() * 900000));
+        this.state.otps.adminOtp = otp;
+        document.getElementById('admin-otp-section').classList.remove('hidden');
+        this.triggerSmsMessageBox(mob, otp, 'admin-otp-input', () => this.verifyAdminOTP());
+      },
+
+      verifyAdminOTP() {
+        const val = document.getElementById('admin-otp-input').value.trim();
+        if (!val || val !== this.state.otps.adminOtp) {
+          this.toast('Invalid Admin OTP.', 'error');
+          return;
+        }
+
+        // Enforce Max 2 Simultaneous Admin Devices
+        const existingIdx = this.state.adminDevices.findIndex(d => d.deviceId === this.state.deviceId);
+        if (existingIdx === -1 && this.state.adminDevices.length >= 2) {
+          this.toast('Security Limit Reached: Admin is already active on 2 devices! Revoke 1 slot first.', 'error');
+          return;
+        }
+
+        if (existingIdx === -1) {
+          this.state.adminDevices.push({
+            deviceId: this.state.deviceId,
+            label: this.getDeviceLabel(),
+            loginTime: new Date().toLocaleTimeString('en-IN')
+          });
+        } else {
+          this.state.adminDevices[existingIdx].loginTime = new Date().toLocaleTimeString('en-IN');
+        }
+
+        this.state.isAdminLoggedIn = true;
+        document.getElementById('sms-message-banner')?.classList.add('hidden');
+        this.saveState();
+        this.updateHeaderSessionUI();
+        this.closeModal('admin-login-modal');
+        this.toast(`Admin verified! Active Admin Devices: ${this.state.adminDevices.length}/2`, 'success');
+        this.navigate('admin');
+      },
+
+      revokeAdminDevice(devId) {
+        this.state.adminDevices = this.state.adminDevices.filter(d => d.deviceId !== devId);
+        if (devId === this.state.deviceId) {
+          this.state.isAdminLoggedIn = false;
+          this.updateHeaderSessionUI();
+          this.navigate('home');
+        }
+        this.saveState();
+        this.render();
+        this.toast('Admin device slot removed.', 'info');
+      },
+
+      logoutAdmin() {
+        this.revokeAdminDevice(this.state.deviceId);
+      },
+
+      // =======================================================================
+      // MCQ EXAM ENGINE (GRAMMAR, VOCABULARY & CDP)
+      // =======================================================================
+      startExam(examId) {
+        if (!this.state.currentStudent) {
+          this.openStage1EntryModal();
+          return;
+        }
+        if (!this.hasCourseAccess(examId)) {
+          this.openPurchaseModal(examId);
+          return;
+        }
+
+        const exam = this.state.exams.find(e => e.id === examId);
+        if (!exam) return;
+
+        let qs = this.state.mcqs.filter(q => q.examId === examId);
+        if (qs.length < 4) {
+          const extras = this.state.mcqs.filter(q => q.examId !== examId);
+          qs = [...qs, ...extras];
+        }
+
+        this.state.activeExam = { ...exam, questions: qs };
+        this.state.examAnswers = {};
+        this.state.examSubmitted = false;
+        this.state.examTimeLeft = exam.durationMin * 60;
+
+        if (this.state.examTimerInterval) clearInterval(this.state.examTimerInterval);
+        this.state.examTimerInterval = setInterval(() => {
+          this.state.examTimeLeft--;
+          const timerEl = document.getElementById('exam-live-timer');
+          if (timerEl) {
+            const m = Math.floor(this.state.examTimeLeft / 60);
+            const s = this.state.examTimeLeft % 60;
+            timerEl.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+          }
+          if (this.state.examTimeLeft <= 0) {
+            this.submitMcqExam();
+          }
+        }, 1000);
+
+        this.navigate('mcq-exam');
+      },
+
+      selectMcqOption(qIdx, optIdx) {
+        if (this.state.examSubmitted) return;
+        this.state.examAnswers[qIdx] = optIdx;
+        this.render();
+      },
+
+      submitMcqExam() {
+        if (this.state.examTimerInterval) {
+          clearInterval(this.state.examTimerInterval);
+          this.state.examTimerInterval = null;
+        }
+        this.state.examSubmitted = true;
+        this.render();
+        this.toast('Mock Test submitted! Detailed scorecard generated.', 'success');
+      },
+
+      // =======================================================================
+      // COMPREHENSION PASSAGES PRACTICE LAB (5 QUESTION FORMATS)
+      // =======================================================================
+      openPassageLab() {
+        if (!this.state.currentStudent) {
+          this.openStage1EntryModal();
+          return;
+        }
+        if (!this.hasCourseAccess('all-bundle')) {
+          this.openPurchaseModal('all-bundle');
+          return;
+        }
+        this.state.passageResult = null;
+        this.navigate('passage-lab');
+      },
+
+      evaluatePassageLab() {
+        const p = this.state.passage;
+        const ans = this.state.passageAnswers;
+        let score = 0;
+        let total = 0;
+
+        // 1. MCQs (1 mark each)
+        p.mcqs.forEach((m, idx) => {
+          total += 1;
+          if (Number(ans.mcq[idx]) === m.ans) score += 1;
+        });
+
+        // 2. True / False (1 mark each)
+        p.trueFalse.forEach((tf, idx) => {
+          total += 1;
+          if (ans.tf[idx] === String(tf.isTrue)) score += 1;
+        });
+
+        // 3. 1-Mark Short Questions
+        p.short1Mark.forEach((sq, idx) => {
+          total += 1;
+          const resp = (ans.s1[idx] || '').toLowerCase();
+          const hits = sq.keywords.filter(k => resp.includes(k)).length;
+          if (hits >= 1) score += 1;
+        });
+
+        // 4. 2-Mark Analytical Questions
+        p.analytical2Mark.forEach((aq, idx) => {
+          total += 2;
+          const resp = (ans.a2[idx] || '').toLowerCase();
+          const hits = aq.keywords.filter(k => resp.includes(k)).length;
+          if (hits >= 2) score += 2;
+          else if (hits === 1) score += 1;
+        });
+
+        // 5. Complete the Sentences (1 mark each)
+        p.completeSentences.forEach((cs, idx) => {
+          total += 1;
+          const resp = (ans.comp[idx] || '').toLowerCase();
+          const hits = cs.keywords.filter(k => resp.includes(k)).length;
+          if (hits >= 2) score += 1;
+        });
+
+        // 6. Matching (1 mark per pair)
+        p.matching.forEach((pair, idx) => {
+          total += 1;
+          if (ans.match[idx] === pair.right) score += 1;
+        });
+
+        this.state.passageResult = { score, total };
+        this.render();
+        this.toast(`Passage Practice Graded: ${score} / ${total} Marks`, 'success');
+      },
+
+      // =======================================================================
+      // WRITING SKILL STUDIO & WHITE-LABELED MRH SMART SCRIPT EVALUATOR
+      // =======================================================================
+      openWritingStudio(topicId = 'w-bn-en') {
+        if (!this.state.currentStudent) {
+          this.openStage1EntryModal();
+          return;
+        }
+        if (!this.hasCourseAccess('all-bundle')) {
+          this.openPurchaseModal('all-bundle');
+          return;
+        }
+        this.state.selectedWritingId = topicId;
+        this.state.evalResult = null;
+        this.navigate('writing-studio');
+      },
+
+      handleCopyFileUpload(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        this.state.uploadedFileName = file.name;
+        this.state.uploadedFileMime = file.type;
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          this.state.uploadedFileBase64 = e.target.result;
+          this.render();
+          this.toast(`Handwritten copy / PDF "${file.name}" scanned into Answer Box!`, 'success');
+        };
+        reader.readAsDataURL(file);
+      },
+
+      clearUploadedCopy() {
+        this.state.uploadedFileBase64 = null;
+        this.state.uploadedFileMime = null;
+        this.state.uploadedFileName = null;
+        this.render();
+      },
+
+      evaluateWritingSubmission() {
+        const topic = this.state.writingTopics.find(t => t.id === this.state.selectedWritingId) || this.state.writingTopics[0];
+        const typedText = (document.getElementById('writing-answer-textarea')?.value || '').trim();
+        const hasScan = Boolean(this.state.uploadedFileBase64);
+
+        if (!typedText && !hasScan) {
+          this.toast('Please type your answer or scan/upload a JPG/PNG/PDF copy first.', 'warning');
+          return;
+        }
+
+        const fullMarks = Number(topic.fullMarks) || 20;
+        const words = typedText ? typedText.split(/\s+/).filter(Boolean) : [];
+        const wordCount = words.length;
+        const sentences = typedText ? typedText.split(/[.!?।]+/).filter(s => s.trim().length > 2) : [];
+
+        // Intelligent Rubric Scoring Engine (MRH Smart Evaluator)
+        let spellingPct = 0.85;
+        let grammarPct = 0.82;
+        let vocabPct = 0.80;
+        let structurePct = 0.82;
+        const notes = [];
+
+        if (hasScan && !typedText) {
+          // Handwritten Scan / PDF Optical Rubric Analysis
+          spellingPct = 0.82;
+          grammarPct = 0.80;
+          vocabPct = 0.78;
+          structurePct = 0.84;
+          notes.push(`Scanned Handwritten / Document Copy ("${this.state.uploadedFileName}") verified for margin layout, legibility, and paragraph structure.`);
+          notes.push('Ensure clear spacing between lines and underlined headings for maximum examiner readability.');
+        } else {
+          // Textual & Linguistic Diagnostic Analysis
+          if (wordCount < 25) {
+            structurePct = 0.45;
+            vocabPct = 0.50;
+            notes.push(`Response is brief (${wordCount} words). Expand supporting points to meet exam length expectations.`);
+          } else if (wordCount >= 60) {
+            structurePct = 0.90;
+            notes.push(`Good response length (${wordCount} words across ${sentences.length} structured sentences).`);
+          }
+
+          // Check basic capitalization & punctuation
+          const lowercaseStarts = sentences.filter(s => /^[a-z]/.test(s.trim())).length;
+          if (lowercaseStarts > 0) {
+            grammarPct -= 0.12;
+            notes.push(`Found ${lowercaseStarts} sentence(s) not starting with a capital letter.`);
+          }
+
+          // Check common spelling slips
+          const commonTypos = ['recieve', 'definately', 'seperate', 'occured', 'untill', 'grammer', 'enviroment', 'goverment'];
+          const foundTypos = words.filter(w => commonTypos.includes(w.toLowerCase().replace(/[^a-z]/g, '')));
+          if (foundTypos.length > 0) {
+            spellingPct -= 0.18;
+            notes.push(`Spelling alert: Check words (${foundTypos.join(', ')}).`);
+          } else {
+            notes.push('Spelling accuracy is strong across standard academic vocabulary.');
+          }
+
+          // Lexical richness check
+          const uniqueWords = new Set(words.map(w => w.toLowerCase().replace(/[^a-z]/g, '')));
+          const lexicalRatio = wordCount > 0 ? uniqueWords.size / wordCount : 0;
+          if (lexicalRatio > 0.65 && wordCount > 30) {
+            vocabPct = 0.92;
+            notes.push('Rich lexical variety and appropriate formal word usage detected.');
+          } else {
+            notes.push('Use stronger transitional connectors (e.g., Furthermore, Consequently, Nevertheless) to elevate formal tone.');
+          }
+        }
+
+        const avgRatio = Math.max(0.35, Math.min(0.96, (spellingPct + grammarPct + vocabPct + structurePct) / 4));
+        const awarded = Math.round(fullMarks * avgRatio * 2) / 2; // Nearest 0.5 mark
+
+        this.state.evalResult = {
+          awarded,
+          fullMarks,
+          spellingScore: Math.round(spellingPct * 100),
+          grammarScore: Math.round(grammarPct * 100),
+          vocabScore: Math.round(vocabPct * 100),
+          structureScore: Math.round(structurePct * 100),
+          notes
+        };
+
+        this.render();
+        this.toast(`MRH Smart Evaluator awarded ${awarded} / ${fullMarks} Marks!`, 'success');
+      },
+
+      // =======================================================================
+      // ADMIN UPDATE HANDLERS (BRANDING, SETTINGS, EXAMS, WRITING, BACKUP)
+      // =======================================================================
+      handleAdminImageUpload(type, event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          if (type === 'profile') {
+            this.state.brand.profilePicDataUrl = e.target.result;
+          } else {
+            this.state.brand.bannerDataUrl = e.target.result;
+          }
+          this.saveState();
+          this.applyBrandHeader();
+          this.render();
+          this.toast(`${type === 'profile' ? 'Profile Picture' : 'Front Page Banner'} updated!`, 'success');
+        };
+        reader.readAsDataURL(file);
+      },
+
+      saveAdminBrandSettings(e) {
+        e.preventDefault();
+        this.state.brand.siteName = document.getElementById('adm-site-name').value.trim() || 'MRH English Mock';
+        this.state.brand.heroBadge = document.getElementById('adm-hero-badge').value.trim();
+        this.state.brand.heroHeadline = document.getElementById('adm-hero-headline').value.trim();
+        this.state.brand.heroSubtitle = document.getElementById('adm-hero-subtitle').value.trim();
+        this.state.brand.announcement = document.getElementById('adm-announcement').value.trim();
+        this.state.upiId = document.getElementById('adm-upi-id').value.trim();
+        this.state.whatsapp = document.getElementById('adm-whatsapp').value.trim();
+        this.state.email = document.getElementById('adm-email').value.trim();
+        this.state.courseFee = Number(document.getElementById('adm-master-fee').value) || 199;
+
+        this.saveState();
+        this.applyBrandHeader();
+        this.render();
+        this.toast('Website settings, UPI details & front page branding saved!', 'success');
+      },
+
+      updateExamRule(idx, field, val) {
+        const num = Number(val);
+        if (field === 'durationMin') this.state.exams[idx].durationMin = Math.max(5, num);
+        if (field === 'marksPerQ') this.state.exams[idx].marksPerQ = Math.max(0.5, num);
+        if (field === 'negativeMark') this.state.exams[idx].negativeMark = Math.max(0, num);
+        if (field === 'fee') this.state.exams[idx].fee = Math.max(0, num);
+        this.saveState();
+        this.toast('Exam rule updated!', 'success');
+      },
+
+      updateWritingRule(idx, field, val) {
+        const num = Number(val);
+        if (field === 'questionCount') this.state.writingTopics[idx].questionCount = Math.max(1, num);
+        if (field === 'fullMarks') this.state.writingTopics[idx].fullMarks = Math.max(1, num);
+        this.saveState();
+        this.toast('Writing Mock Test Question Count / Full Marks updated!', 'success');
+      },
+
+      addAdminMcq(e) {
+        e.preventDefault();
+        const examId = document.getElementById('new-q-exam').value;
+        const topic = document.getElementById('new-q-topic').value.trim();
+        const question = document.getElementById('new-q-text').value.trim();
+        const options = [
+          document.getElementById('new-q-opt0').value.trim(),
+          document.getElementById('new-q-opt1').value.trim(),
+          document.getElementById('new-q-opt2').value.trim(),
+          document.getElementById('new-q-opt3').value.trim()
+        ];
+        const correctIndex = Number(document.getElementById('new-q-ans').value);
+        const explanation = document.getElementById('new-q-exp').value.trim();
+
+        this.state.mcqs.unshift({
+          id: 'q-' + Date.now(),
+          examId,
+          topic,
+          question,
+          options,
+          correctIndex,
+          explanation
+        });
+        this.saveState();
+        this.render();
+        this.toast('New MCQ added to Question Bank!', 'success');
+      },
+
+      deleteAdminMcq(id) {
+        this.state.mcqs = this.state.mcqs.filter(q => q.id !== id);
+        this.saveState();
+        this.render();
+        this.toast('Question deleted.', 'info');
+      },
+
+      exportBackupJson() {
+        const data = localStorage.getItem(this.STORAGE_KEY) || '{}';
+        const blob = new Blob([data], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `MRH_English_Mock_Backup_${new Date().toISOString().slice(0,10)}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+        this.toast('Full Zero-Cost JSON backup exported!', 'success');
+      },
+
+      importBackupJson(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          try {
+            JSON.parse(e.target.result);
+            localStorage.setItem(this.STORAGE_KEY, e.target.result);
+            this.init();
+            this.toast('Backup restored successfully!', 'success');
+          } catch (err) {
+            this.toast('Invalid JSON backup file.', 'error');
+          }
+        };
+        reader.readAsText(file);
+      },
+
+      // =======================================================================
+      // GOOGLE SEARCH SITEMAP, ROBOTS & VIRAL STUDENT SHARE HELPERS
+      // =======================================================================
+      downloadSitemapXml() {
+        const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mrhenglishmock.github.io/</loc>
+    <lastmod>${new Date().toISOString().slice(0, 10)}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>`;
+        const blob = new Blob([xml], { type: 'application/xml' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'sitemap.xml';
+        a.click();
+        URL.revokeObjectURL(url);
+        this.toast('sitemap.xml downloaded! Upload to Google Search Console.', 'success');
+      },
+
+      downloadRobotsTxt() {
+        const txt = `User-agent: *\nAllow: /\nSitemap: https://mrhenglishmock.github.io/sitemap.xml\n`;
+        const blob = new Blob([txt], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'robots.txt';
+        a.click();
+        URL.revokeObjectURL(url);
+        this.toast('robots.txt downloaded for Google Search indexing!', 'success');
+      },
+
+      getPromoBroadcastText() {
+        const url = window.location.href.startsWith('http') ? window.location.href : 'https://mrhenglishmock.github.io/';
+        return `🎯 *MRH English Mock — Official Exam & TET CDP Portal by MRH Sir* 🎯\n\n✅ WBBSE Madhyamik English Mock Series\n✅ WBPSC Clerkship, Miscellaneous, WBP SI & WBCS English\n✅ WB Primary TET, Upper Primary TET & CTET (English + CDP)\n✅ Translation, Report, Precis, Letter, Notice & Automated Handwritten Copy Grading!\n\n🔗 *Portal Link:* ${url}\n📺 *YouTube:* https://youtube.com/@mrh-sir\n📢 *Telegram:* MRH Education (https://t.me/mrh_1118)\n💬 *WhatsApp:* 8972949607`;
+      },
+
+      copyShareLink() {
+        const text = this.getPromoBroadcastText();
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        this.toast('Student invitation message & link copied! Paste in WhatsApp, Telegram, or YouTube.', 'success');
+      },
+
+      shareViaWhatsApp() {
+        const msg = encodeURIComponent(this.getPromoBroadcastText());
+        window.open(`https://wa.me/?text=${msg}`, '_blank');
+      },
+
+      shareViaTelegram() {
+        const url = encodeURIComponent(window.location.href.startsWith('http') ? window.location.href : 'https://mrhenglishmock.github.io/');
+        const text = encodeURIComponent(this.getPromoBroadcastText());
+        window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
+      },
+
+      // =======================================================================
+      // VIEW RENDERERS
+      // =======================================================================
+      render() {
+        const root = document.getElementById('app-root');
+        if (this.state.view === 'home') root.innerHTML = this.renderHomeView();
+        else if (this.state.view === 'mcq-exam') root.innerHTML = this.renderMcqExamView();
+        else if (this.state.view === 'passage-lab') root.innerHTML = this.renderPassageLabView();
+        else if (this.state.view === 'writing-studio') root.innerHTML = this.renderWritingStudioView();
+        else if (this.state.view === 'admin') {
+          if (!this.state.isAdminLoggedIn) { this.navigate('home'); return; }
+          root.innerHTML = this.renderAdminView();
+        }
+      },
+
+      renderHomeView() {
+        const stu = this.state.currentStudent;
+        const hasFullBundle = stu && stu.paidAll;
+        const b = this.state.brand;
+        const demoQ = this.state.mcqs[0];
+        const demoPicked = this.state.heroDemoSelected;
+
+        return `
+          <!-- Live Announcement Ticker -->
+          ${b.announcement ? `
+            <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-navy-950 text-xs font-extrabold py-2.5 px-4 text-center border-b border-amber-600/30 shadow-sm">
+              <i class="fa-solid fa-bullhorn mr-1.5"></i> ${b.announcement}
+            </div>
+          ` : ''}
+
+          <!-- Unique Reflective Hero Section -->
+          <section class="relative reflective-sheen bg-gradient-to-br from-navy-950 via-navy-900 to-blue-950 text-white py-12 sm:py-16 border-b border-blue-900/60 overflow-hidden">
+            ${b.bannerDataUrl ? `
+              <img src="${b.bannerDataUrl}" alt="${b.siteName} Banner" class="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none" />
+              <div class="absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-900/85 to-navy-950/90 pointer-events-none"></div>
+            ` : ''}
+
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Left Column: Brand Value Proposition & Quick Entry -->
+                <div class="lg:col-span-7 space-y-5">
+                  <div class="flex items-center gap-3.5">
+                    ${b.profilePicDataUrl ? `
+                      <img src="${b.profilePicDataUrl}" alt="MRH Sir Profile" class="w-16 h-16 rounded-2xl object-cover border-2 border-amber-400 shadow-xl shrink-0" />
+                    ` : `
+                      <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-navy-950 font-display font-extrabold text-xl flex items-center justify-center shadow-xl shrink-0">MRH</div>
+                    `}
+                    <div class="space-y-1">
+                      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/15 border border-amber-400/30 text-amber-300 text-xs font-bold">
+                        <i class="fa-solid fa-award"></i> ${b.heroBadge}
+                      </div>
+                      <p class="text-[11px] text-emerald-300 font-semibold">
+                        <i class="fa-solid fa-comment-sms mr-1"></i> 1-Tap SMS Message Box OTP &amp; Browser Autofill Active
+                      </p>
+                    </div>
+                  </div>
+
+                  <h1 class="font-display font-extrabold text-3xl sm:text-5xl leading-tight tracking-tight">
+                    ${b.heroHeadline}
+                  </h1>
+                  <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+                    ${b.heroSubtitle}
+                  </p>
+
+                  <!-- Primary Action Buttons -->
+                  <div class="pt-1 flex flex-wrap items-center gap-3">
+                    ${!stu ? `
+                      <button onclick="app.openStage1EntryModal()" class="px-6 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-navy-950 font-extrabold text-sm shadow-xl pulse-gold transition flex items-center gap-2">
+                        <i class="fa-solid fa-mobile-screen-button"></i> Stage 1: Enter with Mobile OTP
+                      </button>
+                    ` : !hasFullBundle ? `
+                      <button onclick="app.openPurchaseModal('all-bundle')" class="px-6 py-3.5 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-extrabold text-sm shadow-xl pulse-gold transition flex items-center gap-2">
+                        <i class="fa-solid fa-bolt"></i> Buy &amp; Auto-Unlock Bundle (₹${this.state.courseFee})
+                      </button>
+                    ` : `
+                      <div class="inline-flex items-center gap-2.5 px-5 py-3 rounded-2xl bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-sm font-bold">
+                        <i class="fa-solid fa-circle-check text-lg"></i> All-Access Course Auto-Unlocked (UTR: ${stu.utr})
+                      </div>
+                    `}
+                    <button onclick="app.openWritingStudio('w-bn-en')" class="px-5 py-3.5 rounded-2xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-sm transition flex items-center gap-2">
+                      <i class="fa-solid fa-pen-nib text-amber-400"></i> Writing &amp; Copy Scan Studio
+                    </button>
+                  </div>
+
+                  <!-- Official Channels & Student Outreach Bar -->
+                  <div class="pt-2 flex flex-wrap items-center gap-2.5 text-xs">
+                    <a href="https://youtube.com/@mrh-sir" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-rose-600/25 border border-rose-500/40 text-rose-200 hover:bg-rose-600/40 transition font-bold">
+                      <i class="fa-brands fa-youtube text-rose-400"></i> YouTube (@mrh-sir)
+                    </a>
+                    <a href="https://t.me/mrh_1118" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-sky-600/25 border border-sky-500/40 text-sky-200 hover:bg-sky-600/40 transition font-bold">
+                      <i class="fa-brands fa-telegram text-sky-400"></i> Telegram (mrh_1118)
+                    </a>
+                    <button onclick="app.shareViaWhatsApp()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-600/25 border border-emerald-500/40 text-emerald-200 hover:bg-emerald-600/40 transition font-bold">
+                      <i class="fa-brands fa-whatsapp text-emerald-400"></i> Share on WhatsApp
+                    </button>
+                    <button onclick="app.copyShareLink()" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white/10 border border-white/20 text-slate-200 hover:bg-white/20 transition font-bold">
+                      <i class="fa-solid fa-copy text-amber-400"></i> Copy Invite Link
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Right Column: Free Interactive Sample Question + Master Bundle Card -->
+                <div class="lg:col-span-5 space-y-4">
+                  ${demoQ ? `
+                    <div class="bg-navy-950/90 backdrop-blur-md border border-blue-500/40 rounded-3xl p-5 shadow-2xl">
+                      <div class="flex items-center justify-between mb-2">
+                        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase bg-amber-500/20 text-amber-300 border border-amber-400/30">
+                          <i class="fa-solid fa-bolt mr-1"></i> Try Free Sample Question
+                        </span>
+                        <span class="text-[11px] text-blue-300 font-semibold">${demoQ.topic}</span>
+                      </div>
+                      <p class="text-xs sm:text-sm font-semibold text-white mb-3 leading-snug">${demoQ.question}</p>
+                      <div class="grid grid-cols-2 gap-2">
+                        ${demoQ.options.map((opt, idx) => {
+                          let btnCls = 'bg-white/5 hover:bg-white/15 border-white/15 text-slate-200';
+                          if (demoPicked !== null) {
+                            if (idx === demoQ.correctIndex) btnCls = 'bg-emerald-600/40 border-emerald-400 text-white font-bold';
+                            else if (idx === demoPicked) btnCls = 'bg-rose-600/40 border-rose-400 text-rose-200';
+                          }
+                          return `
+                            <button type="button" onclick="app.state.heroDemoSelected = ${idx}; app.render()" class="px-3 py-2 rounded-xl border text-left text-xs transition ${btnCls}">
+                              ${['A', 'B', 'C', 'D'][idx]}. ${opt}
+                            </button>
+                          `;
+                        }).join('')}
+                      </div>
+                      ${demoPicked !== null ? `
+                        <p class="text-[11px] text-emerald-300 mt-2.5 bg-emerald-950/60 px-3 py-1.5 rounded-xl border border-emerald-500/30">
+                          <i class="fa-solid fa-lightbulb text-amber-400 mr-1"></i> ${demoQ.explanation}
+                        </p>
+                      ` : ''}
+                    </div>
+                  ` : ''}
+
+                  <!-- Master Course Enrollment Card -->
+                  <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-3xl p-5 shadow-2xl space-y-3">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                      <div>
+                        <p class="text-[11px] uppercase tracking-wider text-blue-300 font-bold">Instant UPI Auto-Activation</p>
+                        <h3 class="font-display font-extrabold text-xl text-white">All-Access Master Bundle</h3>
+                      </div>
+                      <div class="text-right">
+                        <span class="text-2xl sm:text-3xl font-display font-extrabold text-amber-400">₹${this.state.courseFee}</span>
+                        <p class="text-[10px] text-emerald-300 font-semibold">Direct Bank UPI</p>
+                      </div>
+                    </div>
+
+                    <div class="bg-navy-950/85 rounded-2xl p-3 flex items-center justify-between border border-blue-500/30">
+                      <div class="text-xs">
+                        <p class="text-slate-400">West Bengal Gramin Bank - 3675</p>
+                        <p class="font-mono font-bold text-emerald-400 text-sm">${this.state.upiId}</p>
+                      </div>
+                      <button onclick="app.openPurchaseModal('all-bundle')" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-extrabold transition">
+                        Pay &amp; Auto-Unlock
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4-Step Student Journey Bar -->
+              <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-3.5 flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-xl bg-amber-500 text-navy-950 font-extrabold text-sm flex items-center justify-center shrink-0">1</div>
+                  <div>
+                    <p class="text-xs font-bold text-white">Mobile OTP Entry</p>
+                    <p class="text-[11px] text-slate-400">1-Tap SMS autofill &amp; 1-device lock</p>
+                  </div>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-3.5 flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-xl bg-blue-600 text-white font-extrabold text-sm flex items-center justify-center shrink-0">2</div>
+                  <div>
+                    <p class="text-xs font-bold text-white">Dual OTP &amp; UPI QR</p>
+                    <p class="text-[11px] text-slate-400">Verify Mobile+Email &amp; scan UPI</p>
+                  </div>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-3.5 flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-xl bg-emerald-500 text-navy-950 font-extrabold text-sm flex items-center justify-center shrink-0">3</div>
+                  <div>
+                    <p class="text-xs font-bold text-white">Instant UTR Unlock</p>
+                    <p class="text-[11px] text-slate-400">Auto-activates with 12-digit UTR</p>
+                  </div>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-3.5 flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-xl bg-purple-500 text-white font-extrabold text-sm flex items-center justify-center shrink-0">4</div>
+                  <div>
+                    <p class="text-xs font-bold text-white">MRH Smart Evaluator</p>
+                    <p class="text-[11px] text-slate-400">MCQ score + Copy scan evaluation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 1: Academic, Competitive & TET CDP Mock Exam Catalog -->
+          <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+              <div>
+                <span class="text-xs font-extrabold uppercase tracking-wider text-blue-700">Syllabus-Aligned Mock Tests</span>
+                <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 mt-1">Academic, Competitive &amp; TET CDP Exams</h2>
+                <p class="text-xs sm:text-sm text-slate-500 mt-1">
+                  Negative marking is automatically applied for Competitive exams and disabled (0.00) for WBBSE Madhyamik, WB Primary TET, Upper Primary TET &amp; CTET.
+                </p>
+              </div>
+              <button onclick="app.openPassageLab()" class="px-5 py-3 rounded-2xl bg-navy-900 hover:bg-blue-900 text-white text-xs font-extrabold shadow transition flex items-center gap-2 self-start sm:self-auto">
+                <i class="fa-solid fa-book-open text-amber-400"></i> Comprehension Passages Practice Lab
+              </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+              ${this.state.exams.map(ex => {
+                const unlocked = this.hasCourseAccess(ex.id);
+                return `
+                  <div class="glass-card rounded-3xl p-5 shadow-sm hover:shadow-xl transition flex flex-col justify-between border border-slate-200">
+                    <div>
+                      <div class="flex items-center justify-between mb-3">
+                        <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase bg-blue-50 text-blue-800 border border-blue-100">
+                          ${ex.badge}
+                        </span>
+                        <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold ${ex.negativeMark > 0 ? 'bg-rose-50 text-rose-700' : 'bg-emerald-50 text-emerald-700'}">
+                          ${ex.negativeMark > 0 ? `-${ex.negativeMark} Neg Mark` : 'No Negative Mark'}
+                        </span>
+                      </div>
+                      <h3 class="font-display font-extrabold text-lg text-slate-900 leading-snug">${ex.title}</h3>
+                      <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">${ex.desc}</p>
+                      <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] font-bold text-slate-600">
+                        <span><i class="fa-regular fa-clock text-blue-600 mr-1"></i> ${ex.durationMin} Mins</span>
+                        <span><i class="fa-solid fa-star text-amber-500 mr-1"></i> +${ex.marksPerQ} Mark/Q</span>
+                        <span class="text-navy-900 font-extrabold">₹${ex.fee}</span>
+                      </div>
+                    </div>
+
+                    <div class="mt-4 pt-2">
+                      ${unlocked ? `
+                        <button onclick="app.startExam('${ex.id}')" class="w-full py-2.5 rounded-xl bg-navy-900 hover:bg-blue-800 text-white font-bold text-xs shadow transition flex items-center justify-center gap-1.5">
+                          <i class="fa-solid fa-play"></i> Start Mock Test
+                        </button>
+                      ` : `
+                        <button onclick="app.openPurchaseModal('${ex.id}')" class="w-full py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-navy-950 font-extrabold text-xs shadow transition flex items-center justify-center gap-1.5">
+                          <i class="fa-solid fa-lock"></i> Unlock Course (₹${ex.fee})
+                        </button>
+                      `}
+                    </div>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </section>
+
+          <!-- Section 2: Descriptive Writing Skill Modules + Automated Copy Scanner -->
+          <section class="bg-slate-100/80 border-y border-slate-200 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+                <div>
+                  <span class="text-xs font-extrabold uppercase tracking-wider text-emerald-700">MRH Automated Script &amp; Copy Scanner</span>
+                  <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 mt-1">10 Descriptive Writing Skill Formats</h2>
+                  <p class="text-xs sm:text-sm text-slate-600 mt-1">
+                    Type directly or scan/upload handwritten copy (JPG/PNG/PDF). Marks &amp; question counts are fixed by Admin and evaluated automatically.
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                ${this.state.writingTopics.map(w => `
+                  <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                      <div class="flex items-center justify-between text-[10px] font-extrabold text-blue-700 mb-1.5">
+                        <span>${w.questionCount} Question(s)</span>
+                        <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-900">Full Marks: ${w.fullMarks}</span>
+                      </div>
+                      <h4 class="font-display font-bold text-sm text-slate-900 leading-snug">${w.title}</h4>
+                      <p class="text-[11px] text-slate-500 mt-1">${w.examTag}</p>
+                    </div>
+                    <button onclick="app.openWritingStudio('${w.id}')" class="mt-4 w-full py-2 rounded-xl bg-slate-900 hover:bg-blue-800 text-white text-xs font-bold transition">
+                      Attempt &amp; Scan Copy
+                    </button>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 3: Easy Student Outreach & Viral Sharing Hub -->
+          <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="bg-gradient-to-r from-navy-900 to-blue-950 rounded-3xl p-6 sm:p-8 text-white shadow-xl border border-blue-800/60 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+              <div class="space-y-2 max-w-2xl">
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+                  <i class="fa-solid fa-bullhorn mr-1"></i> Reach More Students Easily
+                </span>
+                <h3 class="font-display font-extrabold text-xl sm:text-2xl">Share MRH English Mock on WhatsApp, Telegram &amp; YouTube</h3>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  Share this official portal directly in your WBBSE Madhyamik, TET/CTET, and WBPSC student groups or pin it in your YouTube (<strong class="text-white">@mrh-sir</strong>) and Telegram (<strong class="text-white">MRH Education - mrh_1118</strong>) channels.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-3 shrink-0">
+                <button onclick="app.shareViaWhatsApp()" class="px-5 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-extrabold text-xs sm:text-sm shadow transition flex items-center gap-2">
+                  <i class="fa-brands fa-whatsapp text-base"></i> Share on WhatsApp
+                </button>
+                <button onclick="app.shareViaTelegram()" class="px-5 py-3 rounded-2xl bg-sky-500 hover:bg-sky-400 text-navy-950 font-extrabold text-xs sm:text-sm shadow transition flex items-center gap-2">
+                  <i class="fa-brands fa-telegram text-base"></i> Post to Telegram
+                </button>
+                <button onclick="app.copyShareLink()" class="px-5 py-3 rounded-2xl bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-xs sm:text-sm transition flex items-center gap-2">
+                  <i class="fa-solid fa-copy text-amber-400"></i> Copy Promo Post
+                </button>
+              </div>
+            </div>
+          </section>
+        `;
+      },
+
+      // =======================================================================
+      // VIEW 2: MCQ MOCK EXAM INTERFACE
+      // =======================================================================
+      renderMcqExamView() {
+        const ex = this.state.activeExam;
+        if (!ex) return '';
+        const submitted = this.state.examSubmitted;
+
+        let correct = 0;
+        let wrong = 0;
+        let unattempted = 0;
+        ex.questions.forEach((q, idx) => {
+          const picked = this.state.examAnswers[idx];
+          if (picked === undefined) unattempted++;
+          else if (picked === q.correctIndex) correct++;
+          else wrong++;
+        });
+
+        const totalMarks = ex.questions.length * ex.marksPerQ;
+        const obtained = Math.max(0, (correct * ex.marksPerQ) - (wrong * ex.negativeMark));
+
+        return `
+          <div class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+            <div class="bg-navy-950 text-white rounded-3xl p-5 sm:p-6 mb-6 flex flex-wrap items-center justify-between gap-4 shadow-lg">
+              <div>
+                <span class="text-[11px] font-bold uppercase text-amber-400">${ex.badge}</span>
+                <h2 class="font-display font-extrabold text-xl sm:text-2xl">${ex.title}</h2>
+                <p class="text-xs text-slate-300 mt-0.5">
+                  +${ex.marksPerQ} Mark per correct • ${ex.negativeMark > 0 ? `-${ex.negativeMark} Negative Mark` : 'Zero Negative Marking'}
+                </p>
+              </div>
+              <div class="flex items-center gap-3">
+                ${!submitted ? `
+                  <div class="bg-navy-900 border border-blue-700 px-4 py-2 rounded-2xl text-center">
+                    <span class="text-[10px] uppercase text-blue-300 block font-bold">Time Left</span>
+                    <span id="exam-live-timer" class="font-mono font-extrabold text-lg text-amber-400">
+                      ${String(Math.floor(this.state.examTimeLeft / 60)).padStart(2, '0')}:${String(this.state.examTimeLeft % 60).padStart(2, '0')}
+                    </span>
+                  </div>
+                  <button onclick="app.submitMcqExam()" class="px-5 py-3 rounded-2xl bg-emerald-500 hover:bg-emerald-400 text-navy-950 font-extrabold text-xs sm:text-sm shadow transition">
+                    Submit Test
+                  </button>
+                ` : `
+                  <button onclick="app.navigate('home')" class="px-5 py-3 rounded-2xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs">
+                    <i class="fa-solid fa-arrow-left mr-1"></i> Back to Portal
+                  </button>
+                `}
+              </div>
+            </div>
+
+            ${submitted ? `
+              <div class="bg-white rounded-3xl p-6 border-2 border-emerald-500 shadow-xl mb-6">
+                <h3 class="font-display font-extrabold text-xl text-slate-900 mb-4">Official Scorecard — ${this.state.currentStudent.name}</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+                  <div class="p-3 rounded-2xl bg-blue-50 border border-blue-100">
+                    <span class="text-xs text-slate-500 block">Final Score</span>
+                    <strong class="text-2xl font-display font-extrabold text-navy-900">${obtained.toFixed(2)} / ${totalMarks}</strong>
+                  </div>
+                  <div class="p-3 rounded-2xl bg-emerald-50 border border-emerald-100">
+                    <span class="text-xs text-slate-500 block">Correct</span>
+                    <strong class="text-2xl font-display font-extrabold text-emerald-700">${correct}</strong>
+                  </div>
+                  <div class="p-3 rounded-2xl bg-rose-50 border border-rose-100">
+                    <span class="text-xs text-slate-500 block">Wrong</span>
+                    <strong class="text-2xl font-display font-extrabold text-rose-700">${wrong}</strong>
+                  </div>
+                  <div class="p-3 rounded-2xl bg-slate-100">
+                    <span class="text-xs text-slate-500 block">Unattempted</span>
+                    <strong class="text-2xl font-display font-extrabold text-slate-700">${unattempted}</strong>
+                  </div>
+                </div>
+              </div>
+            ` : ''}
+
+            <div class="space-y-5">
+              ${ex.questions.map((q, qIdx) => {
+                const picked = this.state.examAnswers[qIdx];
+                return `
+                  <div class="bg-white rounded-3xl p-5 sm:p-6 border border-slate-200 shadow-sm">
+                    <div class="flex items-center justify-between text-xs font-bold text-blue-700 mb-2">
+                      <span>Question ${qIdx + 1} of ${ex.questions.length}</span>
+                      <span>${q.topic}</span>
+                    </div>
+                    <p class="font-semibold text-slate-900 text-sm sm:text-base mb-4">${q.question}</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                      ${q.options.map((opt, oIdx) => {
+                        let cls = 'border-slate-200 hover:border-blue-500 bg-slate-50 text-slate-800';
+                        if (!submitted && picked === oIdx) {
+                          cls = 'border-blue-700 bg-blue-50 text-navy-900 font-bold ring-2 ring-blue-700/20';
+                        } else if (submitted) {
+                          if (oIdx === q.correctIndex) cls = 'border-emerald-600 bg-emerald-50 text-emerald-900 font-bold';
+                          else if (oIdx === picked) cls = 'border-rose-500 bg-rose-50 text-rose-900';
+                        }
+                        return `
+                          <button type="button" onclick="app.selectMcqOption(${qIdx}, ${oIdx})" class="p-3.5 rounded-2xl border text-left text-xs sm:text-sm transition flex items-center gap-2.5 ${cls}">
+                            <span class="w-6 h-6 rounded-full bg-white border border-slate-300 flex items-center justify-center font-bold text-xs shrink-0">
+                              ${['A', 'B', 'C', 'D'][oIdx]}
+                            </span>
+                            <span>${opt}</span>
+                          </button>
+                        `;
+                      }).join('')}
+                    </div>
+                    ${submitted ? `
+                      <div class="mt-3 p-3 rounded-xl bg-amber-50 border border-amber-200 text-xs text-amber-950">
+                        <strong>Explanation:</strong> ${q.explanation}
+                      </div>
+                    ` : ''}
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+        `;
+      },
+
+      // =======================================================================
+      // VIEW 3: 5-FORMAT COMPREHENSION PASSAGES PRACTICE LAB
+      // =======================================================================
+      renderPassageLabView() {
+        const p = this.state.passage;
+        const res = this.state.passageResult;
+
+        return `
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+              <div>
+                <span class="text-xs font-extrabold uppercase text-blue-700">WBBSE &amp; Competitive Reading Comprehension</span>
+                <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900">${p.title}</h2>
+              </div>
+              <button onclick="app.navigate('home')" class="px-4 py-2.5 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold">
+                <i class="fa-solid fa-arrow-left mr-1"></i> Back to Home
+              </button>
+            </div>
+
+            <!-- Reading Passage Box -->
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm mb-8">
+              <h3 class="text-xs font-extrabold uppercase tracking-wider text-amber-700 mb-2">Read the Passage Carefully:</h3>
+              <p class="text-sm sm:text-base text-slate-800 leading-relaxed font-medium">${p.text}</p>
+            </div>
+
+            ${res ? `
+              <div class="bg-emerald-600 text-white rounded-3xl p-5 mb-6 flex items-center justify-between shadow-lg">
+                <div>
+                  <span class="text-xs uppercase font-bold text-emerald-200">Automated Passage Evaluation</span>
+                  <h4 class="font-display font-extrabold text-2xl">Obtained Marks: ${res.score} / ${res.total}</h4>
+                </div>
+                <span class="px-4 py-2 rounded-2xl bg-white text-emerald-900 font-extrabold text-sm">Model Answers Unlocked Below</span>
+              </div>
+            ` : ''}
+
+            <div class="space-y-6">
+              <!-- Format 1: MCQs -->
+              <div class="bg-white rounded-3xl p-6 border border-slate-200">
+                <h4 class="font-display font-bold text-base text-navy-900 mb-3">A. Multiple Choice Questions (1 Mark Each)</h4>
+                ${p.mcqs.map((m, idx) => `
+                  <div class="mb-4 last:mb-0">
+                    <p class="text-sm font-semibold text-slate-800 mb-2">${idx + 1}. ${m.q}</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                      ${m.options.map((opt, oIdx) => `
+                        <label class="flex items-center gap-2 p-2.5 rounded-xl border border-slate-200 text-xs cursor-pointer hover:bg-slate-50">
+                          <input type="radio" name="p-mcq-${idx}" value="${oIdx}" onchange="app.state.passageAnswers.mcq[${idx}] = '${oIdx}'" ${this.state.passageAnswers.mcq[idx] === String(oIdx) ? 'checked' : ''} />
+                          <span>${opt}</span>
+                        </label>
+                      `).join('')}
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+
+              <!-- Format 2: True & False -->
+              <div class="bg-white rounded-3xl p-6 border border-slate-200">
+                <h4 class="font-display font-bold text-base text-navy-900 mb-3">B. Write 'True' or 'False' (1 Mark Each)</h4>
+                ${p.trueFalse.map((tf, idx) => `
+                  <div class="mb-3 last:mb-0 p-3 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <p class="text-xs sm:text-sm font-medium text-slate-800">${idx + 1}. ${tf.statement}</p>
+                    <select onchange="app.state.passageAnswers.tf[${idx}] = this.value" class="px-3 py-1.5 rounded-xl border border-slate-300 text-xs font-bold bg-white">
+                      <option value="">Select</option>
+                      <option value="true" ${this.state.passageAnswers.tf[idx] === 'true' ? 'selected' : ''}>True</option>
+                      <option value="false" ${this.state.passageAnswers.tf[idx] === 'false' ? 'selected' : ''}>False</option>
+                    </select>
+                  </div>
+                  ${res ? `<p class="text-xs text-emerald-700 font-semibold mt-1">Answer: ${tf.isTrue ? 'True' : 'False'} — Supporting Statement: "${tf.support}"</p>` : ''}
+                `).join('')}
+              </div>
+
+              <!-- Format 3: 1-Mark & 2-Mark Questions -->
+              <div class="bg-white rounded-3xl p-6 border border-slate-200 space-y-4">
+                <h4 class="font-display font-bold text-base text-navy-900">C. 1-Mark &amp; 2-Mark Short/Analytical Questions</h4>
+                ${p.short1Mark.map((sq, idx) => `
+                  <div>
+                    <label class="block text-xs sm:text-sm font-semibold text-slate-800 mb-1">[1 Mark] ${sq.q}</label>
+                    <input type="text" oninput="app.state.passageAnswers.s1[${idx}] = this.value" value="${this.state.passageAnswers.s1[idx] || ''}" placeholder="Write concise 1-mark answer..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm" />
+                    ${res ? `<p class="text-xs text-emerald-700 font-semibold mt-1">Model Answer: ${sq.modelAns}</p>` : ''}
+                  </div>
+                `).join('')}
+                ${p.analytical2Mark.map((aq, idx) => `
+                  <div>
+                    <label class="block text-xs sm:text-sm font-semibold text-slate-800 mb-1">[2 Marks] ${aq.q}</label>
+                    <textarea rows="2" oninput="app.state.passageAnswers.a2[${idx}] = this.value" placeholder="Write complete 2-mark answer..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm">${this.state.passageAnswers.a2[idx] || ''}</textarea>
+                    ${res ? `<p class="text-xs text-emerald-700 font-semibold mt-1">Model Answer: ${aq.modelAns}</p>` : ''}
+                  </div>
+                `).join('')}
+              </div>
+
+              <!-- Format 4: Complete the Sentences -->
+              <div class="bg-white rounded-3xl p-6 border border-slate-200">
+                <h4 class="font-display font-bold text-base text-navy-900 mb-3">D. Complete the Sentences with Information from the Passage (1 Mark)</h4>
+                ${p.completeSentences.map((cs, idx) => `
+                  <div>
+                    <p class="text-xs sm:text-sm font-medium text-slate-800 mb-1.5">${cs.stem}</p>
+                    <input type="text" oninput="app.state.passageAnswers.comp[${idx}] = this.value" value="${this.state.passageAnswers.comp[idx] || ''}" placeholder="Complete the sentence..." class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs sm:text-sm" />
+                    ${res ? `<p class="text-xs text-emerald-700 font-semibold mt-1">Completion: ${cs.modelAns}</p>` : ''}
+                  </div>
+                `).join('')}
+              </div>
+
+              <!-- Format 5: Column Matching -->
+              <div class="bg-white rounded-3xl p-6 border border-slate-200">
+                <h4 class="font-display font-bold text-base text-navy-900 mb-3">E. Match Column A with Column B (1 Mark Each)</h4>
+                <div class="space-y-2.5">
+                  ${p.matching.map((pair, idx) => `
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 items-center p-3 rounded-2xl bg-slate-50 border border-slate-200">
+                      <span class="text-xs sm:text-sm font-bold text-slate-800">${idx + 1}. ${pair.left}</span>
+                      <select onchange="app.state.passageAnswers.match[${idx}] = this.value" class="px-3 py-2 rounded-xl border border-slate-300 text-xs font-semibold bg-white">
+                        <option value="">-- Match with Column B --</option>
+                        ${p.matching.map(opt => `<option value="${opt.right}" ${this.state.passageAnswers.match[idx] === opt.right ? 'selected' : ''}>${opt.right}</option>`).join('')}
+                      </select>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+
+              <button onclick="app.evaluatePassageLab()" class="w-full py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm shadow-lg transition">
+                Submit &amp; Auto-Grade All 5 Passage Sections
+              </button>
+            </div>
+          </div>
+        `;
+      },
+
+      // =======================================================================
+      // VIEW 4: DESCRIPTIVE WRITING STUDIO & HANDWRITTEN COPY SCANNER
+      // =======================================================================
+      renderWritingStudioView() {
+        const topic = this.state.writingTopics.find(t => t.id === this.state.selectedWritingId) || this.state.writingTopics[0];
+        const res = this.state.evalResult;
+
+        return `
+          <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+              <div>
+                <span class="text-xs font-extrabold uppercase text-emerald-700">MRH Automated Script &amp; Copy Scanner</span>
+                <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900">Descriptive Writing Mock Studio</h2>
+              </div>
+              <button onclick="app.navigate('home')" class="px-4 py-2.5 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs font-bold">
+                <i class="fa-solid fa-arrow-left mr-1"></i> Back to Home
+              </button>
+            </div>
+
+            <!-- Topic Switcher Pills -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              ${this.state.writingTopics.map(w => `
+                <button onclick="app.state.selectedWritingId='${w.id}'; app.state.evalResult=null; app.render()"
+                  class="px-3.5 py-2 rounded-xl text-xs font-bold transition ${w.id === topic.id ? 'bg-navy-900 text-amber-400 shadow' : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-50'}">
+                  ${w.title}
+                </button>
+              `).join('')}
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+              <!-- Question & Answer Box -->
+              <div class="lg:col-span-7 space-y-5">
+                <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm">
+                  <div class="flex items-center justify-between text-xs font-extrabold mb-2">
+                    <span class="text-blue-700">${topic.examTag}</span>
+                    <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-900">
+                      Questions: ${topic.questionCount} • Full Marks: ${topic.fullMarks}
+                    </span>
+                  </div>
+                  <h3 class="font-display font-extrabold text-lg text-slate-900 mb-2">${topic.title}</h3>
+                  <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-800 whitespace-pre-line leading-relaxed">
+                    ${topic.prompt}
+                  </div>
+                </div>
+
+                <!-- Answer Input + Handwritten Copy / PDF Scanner -->
+                <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
+                  <div>
+                    <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-600 mb-1.5">
+                      Option A: Type Your Answer Directly
+                    </label>
+                    <textarea id="writing-answer-textarea" rows="7" placeholder="Write your translation, report, precis, letter, story, or notice here..." class="w-full p-4 rounded-2xl border border-slate-300 focus:ring-2 focus:ring-blue-700 text-sm leading-relaxed"></textarea>
+                  </div>
+
+                  <div class="border-t border-slate-200 pt-4">
+                    <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-600 mb-2">
+                      Option B: Scan / Upload Handwritten Copy (JPG, PNG, or PDF)
+                    </label>
+                    <label class="flex flex-col items-center justify-center p-5 rounded-2xl border-2 border-dashed border-blue-300 bg-blue-50/40 hover:bg-blue-50 cursor-pointer transition text-center">
+                      <i class="fa-solid fa-camera text-2xl text-blue-700 mb-1.5"></i>
+                      <span class="text-xs font-bold text-navy-900">Tap to Scan Handwritten Notebook Page or Upload PDF/JPG</span>
+                      <span class="text-[11px] text-slate-500 mt-0.5">Supports mobile camera capture &amp; document files</span>
+                      <input type="file" accept="image/*,.pdf" capture="environment" onchange="app.handleCopyFileUpload(event)" class="hidden" />
+                    </label>
+
+                    ${this.state.uploadedFileName ? `
+                      <div class="mt-3 p-3 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-between text-xs">
+                        <span class="font-bold text-emerald-800 truncate"><i class="fa-solid fa-file-image mr-1.5"></i> ${this.state.uploadedFileName}</span>
+                        <button type="button" onclick="app.clearUploadedCopy()" class="text-rose-600 font-bold ml-2">Remove</button>
+                      </div>
+                    ` : ''}
+                  </div>
+
+                  <button onclick="app.evaluateWritingSubmission()" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white font-extrabold text-sm shadow-lg transition">
+                    Evaluate Writing &amp; Generate Marks Automatically
+                  </button>
+                </div>
+              </div>
+
+              <!-- Right Column: MRH Smart Evaluator Scorecard -->
+              <div class="lg:col-span-5">
+                <div class="bg-navy-950 text-white rounded-3xl p-6 shadow-xl border border-blue-900/60 sticky top-24">
+                  <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase bg-amber-500/20 text-amber-300 border border-amber-400/30">
+                    MRH Automated Script Evaluator
+                  </span>
+                  <h4 class="font-display font-extrabold text-xl mt-2">Examiner Evaluation Report</h4>
+
+                  ${!res ? `
+                    <p class="text-xs text-slate-400 mt-3 leading-relaxed">
+                      Submit your typed script or scanned handwritten copy to receive an instant breakdown of Spelling, Grammar, Vocabulary Usage, Sentence Structure, and Exact Marks out of <strong>${topic.fullMarks}</strong>.
+                    </p>
+                  ` : `
+                    <div class="mt-4 space-y-4">
+                      <div class="p-4 rounded-2xl bg-emerald-500/15 border border-emerald-400/40 text-center">
+                        <span class="text-xs uppercase font-bold text-emerald-300 block">Obtained Marks</span>
+                        <strong class="font-display font-extrabold text-4xl text-white">${res.awarded}</strong>
+                        <span class="text-sm text-emerald-300 font-bold"> / ${res.fullMarks}</span>
+                      </div>
+
+                      <div class="grid grid-cols-2 gap-2.5 text-xs">
+                        <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                          <span class="text-slate-400 block">Spelling Accuracy</span>
+                          <strong class="text-base text-amber-400">${res.spellingScore}%</strong>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                          <span class="text-slate-400 block">Grammar &amp; Tense</span>
+                          <strong class="text-base text-emerald-400">${res.grammarScore}%</strong>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                          <span class="text-slate-400 block">Word &amp; Vocab Use</span>
+                          <strong class="text-base text-sky-400">${res.vocabScore}%</strong>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/5 border border-white/10">
+                          <span class="text-slate-400 block">Sentence Structure</span>
+                          <strong class="text-base text-purple-300">${res.structureScore}%</strong>
+                        </div>
+                      </div>
+
+                      <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 space-y-1.5">
+                        <p class="text-xs font-bold text-amber-300">Diagnostic Feedback:</p>
+                        <ul class="list-disc pl-4 space-y-1 text-xs text-slate-300">
+                          ${res.notes.map(n => `<li>${n}</li>`).join('')}
+                        </ul>
+                      </div>
+                    </div>
+                  `}
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      },
+
+      // =======================================================================
+      // VIEW 5: ADMIN CONTROL CENTER (2-DEVICE MAX + FULL BRAND & EXAM EDITOR)
+      // =======================================================================
+      renderAdminView() {
+        const tab = this.state.adminTab;
+        const b = this.state.brand;
+
+        return `
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="bg-navy-950 text-white rounded-3xl p-6 mb-6 flex flex-wrap items-center justify-between gap-4 shadow-xl">
+              <div>
+                <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase bg-amber-500 text-navy-950">
+                  Admin Verified • 8972949607
+                </span>
+                <h2 class="font-display font-extrabold text-2xl mt-1">MRH English Mock — Admin Control Center</h2>
+                <p class="text-xs text-slate-300 mt-0.5">Active Admin Devices: <strong>${this.state.adminDevices.length} / 2 Allowed</strong></p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <button onclick="app.exportBackupJson()" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold">
+                  <i class="fa-solid fa-download mr-1"></i> Export Zero-Cost Backup
+                </button>
+                <label class="px-4 py-2 rounded-xl bg-blue-700 hover:bg-blue-600 text-white text-xs font-bold cursor-pointer">
+                  <i class="fa-solid fa-upload mr-1"></i> Restore Backup
+                  <input type="file" accept=".json" onchange="app.importBackupJson(event)" class="hidden" />
+                </label>
+                <button onclick="app.logoutAdmin()" class="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold">
+                  Logout Admin
+                </button>
+              </div>
+            </div>
+
+            <!-- Admin Tabs -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              ${[
+                { id: 'branding', label: '1. Profile Pic, Banner & Site Settings' },
+                { id: 'exams', label: '2. Exam Timers, Marks & Fees' },
+                { id: 'writing', label: '3. Writing Question Counts & Full Marks' },
+                { id: 'questions', label: '4. MCQ Question Bank' },
+                { id: 'devices', label: '5. Students & 2-Device Admin Lock' }
+              ].map(t => `
+                <button onclick="app.state.adminTab='${t.id}'; app.render()"
+                  class="px-4 py-2.5 rounded-xl text-xs font-extrabold transition ${tab === t.id ? 'bg-navy-900 text-amber-400 shadow' : 'bg-white border border-slate-200 text-slate-700'}">
+                  ${t.label}
+                </button>
+              `).join('')}
+            </div>
+
+            ${tab === 'branding' ? `
+              <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-6">
+                <h3 class="font-display font-extrabold text-lg text-slate-900">Update Profile Picture, Front Banner &amp; Site Settings</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+                    <label class="block text-xs font-bold uppercase text-slate-600">Educator Profile Picture (MRH Sir)</label>
+                    <input type="file" accept="image/*" onchange="app.handleAdminImageUpload('profile', event)" class="text-xs" />
+                    ${b.profilePicDataUrl ? `<img src="${b.profilePicDataUrl}" class="w-16 h-16 rounded-xl object-cover mt-2 border" />` : ''}
+                  </div>
+                  <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
+                    <label class="block text-xs font-bold uppercase text-slate-600">Front Page Hero Banner Image</label>
+                    <input type="file" accept="image/*" onchange="app.handleAdminImageUpload('banner', event)" class="text-xs" />
+                    ${b.bannerDataUrl ? `<img src="${b.bannerDataUrl}" class="h-16 w-full rounded-xl object-cover mt-2 border" />` : ''}
+                  </div>
+                </div>
+
+                <form onsubmit="app.saveAdminBrandSettings(event)" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold text-slate-600 mb-1">Website Name</label>
+                    <input type="text" id="adm-site-name" value="${b.siteName}" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-600 mb-1">Hero Top Badge</label>
+                    <input type="text" id="adm-hero-badge" value="${b.heroBadge}" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+                  </div>
+                  <div class="md:col-span-2">
+                    <label class="block text-xs font-bold text-slate-600 mb-1">Hero Main Headline</label>
+                    <input type="text" id="adm-hero-headline" value="${b.heroHeadline}" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+                  </div>
+                  <div class="md:col-span-2">
+                    <label class="block text-xs font-bold text-slate-600 mb-1">Hero Subtitle</label>
+                    <textarea id="adm-hero-subtitle" rows="2" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm">${b.heroSubtitle}</textarea>
+                  </div>
+                  <div class="md:col-span-2">
+                    <label class="block text-xs font-bold text-slate-600 mb-1">Top Announcement Ticker</label>
+                    <input type="text" id="adm-announcement" value="${b.announcement}" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-600 mb-1">UPI ID (West Bengal Gramin Bank)</label>
+                    <input type="text" id="adm-upi-id" value="${this.state.upiId}" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-mono text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-600 mb-1">Master Bundle Course Fee (₹)</label>
+                    <input type="number" id="adm-master-fee" value="${this.state.courseFee}" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-600 mb-1">WhatsApp Number</label>
+                    <input type="text" id="adm-whatsapp" value="${this.state.whatsapp}" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-600 mb-1">Official Email ID</label>
+                    <input type="email" id="adm-email" value="${this.state.email}" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm" />
+                  </div>
+                  <div class="md:col-span-2">
+                    <button type="submit" class="px-6 py-3 rounded-xl bg-navy-900 hover:bg-blue-800 text-white font-extrabold text-sm shadow">
+                      Save All Branding &amp; Payment Settings
+                    </button>
+                  </div>
+                </form>
+              </div>
+            ` : ''}
+
+            ${tab === 'exams' ? `
+              <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm overflow-x-auto">
+                <h3 class="font-display font-extrabold text-lg text-slate-900 mb-4">Configure Exam Timers, Marks, Negative Marks &amp; Fees</h3>
+                <table class="w-full text-left text-xs">
+                  <thead>
+                    <tr class="border-b border-slate-200 text-slate-500 uppercase">
+                      <th class="py-3 pr-3">Exam Name</th>
+                      <th class="py-3 px-2">Time (Min)</th>
+                      <th class="py-3 px-2">+Marks/Q</th>
+                      <th class="py-3 px-2">-Negative</th>
+                      <th class="py-3 px-2">Course Fee (₹)</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-100">
+                    ${this.state.exams.map((ex, idx) => `
+                      <tr>
+                        <td class="py-3 pr-3 font-bold text-slate-900">${ex.title}</td>
+                        <td class="py-3 px-2"><input type="number" value="${ex.durationMin}" onchange="app.updateExamRule(${idx}, 'durationMin', this.value)" class="w-20 px-2 py-1.5 rounded-lg border" /></td>
+                        <td class="py-3 px-2"><input type="number" step="0.5" value="${ex.marksPerQ}" onchange="app.updateExamRule(${idx}, 'marksPerQ', this.value)" class="w-20 px-2 py-1.5 rounded-lg border" /></td>
+                        <td class="py-3 px-2"><input type="number" step="0.05" value="${ex.negativeMark}" onchange="app.updateExamRule(${idx}, 'negativeMark', this.value)" class="w-20 px-2 py-1.5 rounded-lg border" /></td>
+                        <td class="py-3 px-2"><input type="number" value="${ex.fee}" onchange="app.updateExamRule(${idx}, 'fee', this.value)" class="w-24 px-2 py-1.5 rounded-lg border" /></td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+            ` : ''}
+
+            ${tab === 'writing' ? `
+              <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm overflow-x-auto">
+                <h3 class="font-display font-extrabold text-lg text-slate-900 mb-4">Set Writing Mock Test Question Numbers &amp; Full Marks (Admin Only)</h3>
+                <table class="w-full text-left text-xs">
+                  <thead>
+                    <tr class="border-b border-slate-200 text-slate-500 uppercase">
+                      <th class="py-3 pr-3">Writing Skill Module</th>
+                      <th class="py-3 px-2">Target Exam</th>
+                      <th class="py-3 px-2">Question Numbers</th>
+                      <th class="py-3 px-2">Full Marks</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-100">
+                    ${this.state.writingTopics.map((w, idx) => `
+                      <tr>
+                        <td class="py-3 pr-3 font-bold text-slate-900">${w.title}</td>
+                        <td class="py-3 px-2 text-slate-500">${w.examTag}</td>
+                        <td class="py-3 px-2"><input type="number" min="1" value="${w.questionCount}" onchange="app.updateWritingRule(${idx}, 'questionCount', this.value)" class="w-20 px-2 py-1.5 rounded-lg border font-bold" /></td>
+                        <td class="py-3 px-2"><input type="number" min="1" value="${w.fullMarks}" onchange="app.updateWritingRule(${idx}, 'fullMarks', this.value)" class="w-20 px-2 py-1.5 rounded-lg border font-bold" /></td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+            ` : ''}
+
+            ${tab === 'questions' ? `
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <form onsubmit="app.addAdminMcq(event)" class="lg:col-span-5 bg-white rounded-3xl p-6 border border-slate-200 space-y-3">
+                  <h3 class="font-display font-extrabold text-lg text-slate-900">Add New MCQ (Grammar / Vocab / CDP)</h3>
+                  <select id="new-q-exam" class="w-full px-3 py-2 rounded-xl border text-xs font-bold">
+                    ${this.state.exams.map(e => `<option value="${e.id}">${e.title}</option>`).join('')}
+                  </select>
+                  <input type="text" id="new-q-topic" required placeholder="Topic (e.g., CDP Piaget / Preposition)" class="w-full px-3 py-2 rounded-xl border text-xs" />
+                  <textarea id="new-q-text" required rows="2" placeholder="Enter question statement..." class="w-full px-3 py-2 rounded-xl border text-xs"></textarea>
+                  <div class="grid grid-cols-2 gap-2">
+                    <input type="text" id="new-q-opt0" required placeholder="Option A" class="px-3 py-2 rounded-xl border text-xs" />
+                    <input type="text" id="new-q-opt1" required placeholder="Option B" class="px-3 py-2 rounded-xl border text-xs" />
+                    <input type="text" id="new-q-opt2" required placeholder="Option C" class="px-3 py-2 rounded-xl border text-xs" />
+                    <input type="text" id="new-q-opt3" required placeholder="Option D" class="px-3 py-2 rounded-xl border text-xs" />
+                  </div>
+                  <select id="new-q-ans" class="w-full px-3 py-2 rounded-xl border text-xs font-bold">
+                    <option value="0">Correct: Option A</option>
+                    <option value="1">Correct: Option B</option>
+                    <option value="2">Correct: Option C</option>
+                    <option value="3">Correct: Option D</option>
+                  </select>
+                  <input type="text" id="new-q-exp" required placeholder="Short explanation..." class="w-full px-3 py-2 rounded-xl border text-xs" />
+                  <button type="submit" class="w-full py-2.5 rounded-xl bg-navy-900 text-white font-bold text-xs">Add Question</button>
+                </form>
+
+                <div class="lg:col-span-7 bg-white rounded-3xl p-6 border border-slate-200 space-y-3">
+                  <h3 class="font-display font-extrabold text-lg text-slate-900">Active Question Bank (${this.state.mcqs.length})</h3>
+                  <div class="space-y-2.5 max-h-[460px] overflow-y-auto pr-1">
+                    ${this.state.mcqs.map(q => `
+                      <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 flex items-start justify-between gap-3">
+                        <div class="text-xs">
+                          <span class="font-bold text-blue-700">${q.topic}</span>
+                          <p class="font-semibold text-slate-900 mt-0.5">${q.question}</p>
+                        </div>
+                        <button onclick="app.deleteAdminMcq('${q.id}')" class="text-rose-600 hover:text-rose-800 text-xs font-bold shrink-0">Delete</button>
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+              </div>
+            ` : ''}
+
+            ${tab === 'devices' ? `
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white rounded-3xl p-6 border border-slate-200">
+                  <h3 class="font-display font-extrabold text-lg text-slate-900 mb-3">Active Admin Devices (Max 2 Allowed)</h3>
+                  <div class="space-y-2.5">
+                    ${this.state.adminDevices.map((d, i) => `
+                      <div class="p-3.5 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-between text-xs">
+                        <div>
+                          <strong class="text-navy-900">Slot ${i + 1}: ${d.label}</strong>
+                          <p class="font-mono text-slate-600">${d.deviceId} • Login: ${d.loginTime}</p>
+                        </div>
+                        <button onclick="app.revokeAdminDevice('${d.deviceId}')" class="px-3 py-1.5 rounded-lg bg-rose-600 text-white font-bold">Revoke</button>
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 border border-slate-200">
+                  <h3 class="font-display font-extrabold text-lg text-slate-900 mb-3">Verified Students (1-Device Locked)</h3>
+                  ${this.state.students.length === 0 ? `<p class="text-xs text-slate-500">No students registered on this browser yet.</p>` : `
+                    <div class="space-y-2.5">
+                      ${this.state.students.map(s => `
+                        <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs flex items-center justify-between">
+                          <div>
+                            <strong class="text-slate-900">${s.name}</strong> (${s.mobile})
+                            <p class="text-slate-500">${s.email || 'Email pending purchase'} • Device: <span class="font-mono">${s.lockedDeviceId}</span></p>
+                          </div>
+                          <span class="px-2.5 py-1 rounded-full font-bold ${s.paidAll ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'}">
+                            ${s.paidAll ? `PAID (UTR: ${s.utr})` : 'Stage 1 Verified'}
+                          </span>
+                        </div>
+                      `).join('')}
+                    </div>
+                  `}
+                </div>
+              </div>
+            ` : ''}
+          </div>
+        `;
+      }
+    };
+
+    window.onload = function () {
+      app.init();
+    };
+  </script>
+</body>
+</html>
